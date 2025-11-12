@@ -67,7 +67,7 @@
 
 .carousel-inner-custom {
   display: flex;
-  overflow-x: auto;
+  overflow-x: hidden;
   scroll-behavior: smooth;
   gap: 1rem;
   padding-bottom: 1rem;
@@ -78,7 +78,9 @@
 }
 
 .news-card {
-  flex: 0 0 320px;
+  flex: 0 0 calc(33.333% - 1rem); /* 3 cards por linha */
+  min-width: calc(33.333% - 1rem);
+  box-sizing: border-box;
   border: none;
   border-radius: 10px;
   background: #fff;
@@ -131,23 +133,6 @@
 }
 
 
-
-/* Publicidade */
-.publicidade-box {
-  background: linear-gradient(90deg, #3266ff, #b536c7);
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
-  max-width: 800px;
-
-}
-
-/* Ajuste de altura proporcional */
-.noticias-regionais .col-lg-4 {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
-
 /* Responsividade dos cards */
 @media (max-width: 992px) {
   .carousel-track .card {
@@ -159,3 +144,86 @@
     flex: 0 0 calc(100% - 1rem);
   }
 }
+
+/* Publicidade */
+.publicidade {
+  margin: 2rem 0;
+}
+
+.publicidade-box {
+  background: linear-gradient(90deg, #3266ff, #b536c7);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  max-width: 100%;
+  margin: 0 auto; /* ← Centraliza horizontalmente */
+
+}
+
+/* Ajuste de altura proporcional */
+.noticias-regionais .col-lg-4 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* ======= EM ALTA ======= */
+
+.em-alta-item {
+  display: flex;
+  align-items: center; /* <-- agora tudo fica alinhado na mesma linha */
+  gap: 1rem;
+  margin-bottom: 1.2rem;
+  padding-bottom: 0.8rem;
+  border-bottom: 1px solid #e9ecef;
+  transition: all 0.2s ease-in-out;
+  color: inherit; /* mantém cor do texto original */
+}
+
+.rank-number {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #0d6efd; /* azul Bootstrap */
+  line-height: 1;
+  min-width: 40px;
+  text-align: center;
+}
+
+.rank-text h6 {
+  font-size: 1rem;
+  font-weight: 600;
+  margin: 0;
+  color: #212529;
+}
+
+.rank-text .badge {
+  font-size: 0.75rem;
+  font-weight: 500;
+  padding: 0.35em 0.65em;
+  border-radius: 4px;
+}
+
+/* Remove última borda */
+.em-alta-item:last-child {
+  border-bottom: none;
+}
+
+/* ======= HOVER ======= */
+.em-alta-item:hover {
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  transform: translateX(5px);
+}
+
+.em-alta-item:hover .rank-number {
+  color: #b536c7; /* muda a cor do número ao passar o mouse */
+}
+
+/* Responsivo */
+@media (max-width: 576px) {
+  .rank-number {
+    font-size: 2rem;
+  }
+  .rank-text h6 {
+    font-size: 0.95rem;
+  }
+}
+
