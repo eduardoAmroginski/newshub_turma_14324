@@ -23,14 +23,15 @@
 
   <main>
     <!-- Notícias Principais - Mundial -->
-    <section class="container my-4">
-      <h4><strong>|</strong> Notícias Principais - Mundial</h4>
+    <section id="noticias-principais" class="container my-4">
+      <h4>Notícias Principais - Mundial</h4>
 
       <div id="carouselNoticias" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
 
           <!-- Item 1 -->
           <div class="carousel-item active">
+             <a href="noticia1.html" class="text-decoration-none text-white">
             <img src="./src/assets/img/carrossel.jpeg" class="d-block w-100" alt="Imagem de jogo RPG de mundo aberto">
             <div class="card-img-overlay d-flex flex-column justify-content-end bg-gradient">
               <div>
@@ -43,10 +44,12 @@
                 10 Out 2025 · 5 min
               </div>
             </div>
+            </a>
           </div>
 
           <!-- Item 2 -->
           <div class="carousel-item">
+            <a href="noticia1.html" class="text-decoration-none text-white">
             <img src="./src/assets/img/carrossel.jpeg" class="d-block w-100" alt="Imagem de jogo RPG de mundo aberto">
             <div class="card-img-overlay d-flex flex-column justify-content-end bg-gradient">
               <div>
@@ -59,7 +62,8 @@
                 10 Out 2025 · 6 min
               </div>
             </div>
-          </div>
+          </a>
+        </div>
 
         </div>
 
@@ -76,15 +80,18 @@
     </section>
 
       <!-- Notícias Nacionais -->
-<section class="container my-5">
-  <h4 class="mb-4"><strong>|</strong> Notícias Nacionais</h4>
+<!-- Notícias Nacionais -->
+<section id="noticias-nacionais" class="container my-5">
+  <h4 class="mb-4">Notícias Nacionais</h4>
 
   <div class="news-carousel position-relative">
+    <!-- Botão anterior -->
     <button class="carousel-btn left" id="prevBtn">&#10094;</button>
 
+    <!-- Área de cards -->
     <div class="carousel-inner-custom" id="carouselNacional">
       <!-- Card 1 -->
-      <div class="card news-card">
+      <a href="nacional1.html" class="news-card text-decoration-none text-dark">
         <img src="./src/assets/img/card.jpeg" alt="Blockchain">
         <div class="card-body">
           <span class="badge bg-primary me-1">Tecnologia</span>
@@ -93,57 +100,82 @@
           <p>Empresa nacional recebe investimento milionário para expandir plataforma de segurança digital.</p>
           <small class="text-muted">10 Out 2025 · 4 min</small>
         </div>
-      </div>
+      </a>
 
       <!-- Card 2 -->
-      <div class="card news-card">
+      <a href="nacional2.html" class="news-card text-decoration-none text-dark">
         <img src="./src/assets/img/card.jpeg" alt="E-commerce">
         <div class="card-body">
           <span class="badge bg-dark me-1">Negócios</span>
           <span class="badge bg-secondary">Nacional</span>
-          <h5 class="mt-2">Mercado brasileiro de e-commerce cresce 25% no último trimestre</h5>
+          <h5 class="mt-2">Mercado brasileiro de e-commerce cresce 25%</h5>
           <p>Setor impulsionado por novos hábitos de consumo e investimentos em logística.</p>
           <small class="text-muted">9 Out 2025 · 5 min</small>
         </div>
-      </div>
+      </a>
 
       <!-- Card 3 -->
-      <div class="card news-card">
-        <img src="./src/assets/img/card.jpeg" alt="Jogos">
+      <a href="nacional3.html" class="news-card text-decoration-none text-dark">
+        <img src="./src/assets/img/card.jpeg" alt="Saúde">
         <div class="card-body">
-          <span class="badge bg-info text-dark me-1">Jogos</span>
+          <span class="badge bg-success me-1">Saúde</span>
           <span class="badge bg-secondary">Nacional</span>
-          <h5 class="mt-2">Desenvolvedores brasileiros lançam jogo indie premiado internacionalmente</h5>
-          <p>Título nacional conquista prêmios em festivais de games ao redor do mundo.</p>
-          <small class="text-muted">9 Out 2025 · 4 min</small>
+          <h5 class="mt-2">Nova política de saúde pública beneficia cidades pequenas</h5>
+          <p>Iniciativa visa reduzir desigualdades regionais no acesso a serviços médicos.</p>
+          <small class="text-muted">8 Out 2025 · 3 min</small>
         </div>
-      </div>
+      </a>
 
       <!-- Card 4 -->
-      <div class="card news-card">
-        <img src="./src/assets/img/card.jpeg" alt="Jogos">
+      <a href="nacional3.html" class="news-card text-decoration-none text-dark">
+        <img src="./src/assets/img/card.jpeg" alt="Saúde">
         <div class="card-body">
-          <span class="badge bg-info text-dark me-1">Jogos</span>
-          <span class="badge bg-secondary">Nacional</span>
-          <h5 class="mt-2">Desenvolvedores brasileiros lançam jogo indie premiado internacionalmente</h5>
-          <p>Título nacional conquista prêmios em festivais de games ao redor do mundo.</p>
-          <small class="text-muted">9 Out 2025 · 4 min</small>
+          <span class="badge bg-success me-1">Teste 1</span>
+          <span class="badge bg-secondary">Teste</span>
+          <h5 class="mt-2">Teste</h5>
+          <p>Testante se esta funcionando.</p>
+          <small class="text-muted">8 Out 2025 · 3 min</small>
         </div>
-      </div>
+      </a>
+
+      <!-- Card 5 -->
+      <a href="nacional3.html" class="news-card text-decoration-none text-dark">
+        <img src="./src/assets/img/card.jpeg" alt="Saúde">
+        <div class="card-body">
+          <span class="badge bg-success me-1">Teste 1</span>
+          <span class="badge bg-secondary">Teste</span>
+          <h5 class="mt-2">Teste</h5>
+          <p>Testante se esta funcionando.</p>
+          <small class="text-muted">8 Out 2025 · 3 min</small>
+        </div>
+      </a>
+
+      <!-- Card 6 -->
+      <a href="nacional3.html" class="news-card text-decoration-none text-dark">
+        <img src="./src/assets/img/card.jpeg" alt="Saúde">
+        <div class="card-body">
+          <span class="badge bg-success me-1">Teste 1</span>
+          <span class="badge bg-secondary">Teste</span>
+          <h5 class="mt-2">Teste</h5>
+          <p>Testante se esta funcionando.</p>
+          <small class="text-muted">8 Out 2025 · 3 min</small>
+        </div>
+      </a>
+
+      <!-- Adicione quantos cards quiser -->
     </div>
 
+    <!-- Botão próximo -->
     <button class="carousel-btn right" id="nextBtn">&#10095;</button>
   </div>
 </section>
 
-    <!-- Noticias regionais -->
-
-    
-    <section class="noticias-regionais container my-5">
+<!-- regionais  -->
+<section id="noticias-regionais" class="container my-5">
   <div class="row">
     <!-- Coluna esquerda: Cards -->
     <div class="col-lg-8">
-      <h4 class="mb-4"><strong>|</strong> Notícias Regionais</h4>
+      <h4 class="mb-4">Notícias Regionais</h4>
       <div class="row g-4">
         <!-- Card 1 -->
         <div class="col-md-6">
@@ -163,7 +195,7 @@
         <!-- Card 2 -->
         <div class="col-md-6">
           <div class="card border-0 shadow-sm h-100">
-            <img src="./src/assets/img/card.jpeg"  class="card-img-top rounded-top" alt="Imagem 2">
+            <img src="./src/assets/img/card.jpeg" class="card-img-top rounded-top" alt="Imagem 2">
             <div class="card-body">
               <span class="badge bg-warning mb-2">Negócios</span>
               <h6 class="card-title fw-bold">Empresas do Sul do Brasil expandem exportações para América Latina</h6>
@@ -178,7 +210,7 @@
         <!-- Card 3 -->
         <div class="col-md-6">
           <div class="card border-0 shadow-sm h-100">
-            <img src="./src/assets/img/card.jpeg"  class="card-img-top rounded-top" alt="Imagem 3">
+            <img src="./src/assets/img/card.jpeg" class="card-img-top rounded-top" alt="Imagem 3">
             <div class="card-body">
               <span class="badge bg-info mb-2">Ciência</span>
               <h6 class="card-title fw-bold">Universidade do Rio desenvolve vacina experimental promissora</h6>
@@ -193,7 +225,7 @@
         <!-- Card 4 -->
         <div class="col-md-6">
           <div class="card border-0 shadow-sm h-100">
-            <img src="./src/assets/img/card.jpeg"  class="card-img-top rounded-top" alt="Imagem 4">
+            <img src="./src/assets/img/card.jpeg" class="card-img-top rounded-top" alt="Imagem 4">
             <div class="card-body">
               <span class="badge bg-danger mb-2">Entretenimento</span>
               <h6 class="card-title fw-bold">Festival de música reúne milhares em Minas Gerais</h6>
@@ -207,56 +239,52 @@
       </div>
     </div>
 
-    <!-- COLUNA LATERAL (Em Alta) -->
-    <div class="col-lg-4 d-flex flex-column justify-content-between">
-      <div class="em-alta">
-        <h5 class="mb-4"><strong>|</strong> Em Alta</h5>
-    
-        <a href="noticia-apple.html" class="em-alta-item text-decoration-none">
-          <span class="rank-number">1</span>
+    <!-- Coluna direita: Em Alta -->
+    <div class="col-lg-4">
+      <div class="em-alta mb-4">
+        <h4 class="mb-3">Em Alta</h4>
+
+        <a href="#" class="em-alta-item">
+          <div class="rank-number">1</div>
           <div class="rank-text">
-            <h6 class="fw-semibold mb-1">Apple anuncia evento especial</h6>
+            <h6>Apple anuncia evento especial</h6>
             <span class="badge bg-primary">Tecnologia</span>
-          </div>
-        </a>
-    
-        <a href="noticia-netflix.html" class="em-alta-item text-decoration-none">
-          <span class="rank-number">2</span>
-          <div class="rank-text">
-            <h6 class="fw-semibold mb-1">Netflix revela lançamentos de outubro</h6>
-            <span class="badge bg-danger">Entretenimento</span>
-          </div>
-        </a>
-    
-        <a href="noticia-tesla.html" class="em-alta-item text-decoration-none">
-          <span class="rank-number">3</span>
-          <div class="rank-text">
-            <h6 class="fw-semibold mb-1">Tesla apresenta novo carro elétrico</h6>
-            <span class="badge bg-dark">Automóveis</span>
-          </div>
-        </a>
-    
-        <a href="noticia-amazon.html" class="em-alta-item text-decoration-none">
-          <span class="rank-number">4</span>
-          <div class="rank-text">
-            <h6 class="fw-semibold mb-1">Amazon expande operações no Brasil</h6>
-            <span class="badge bg-warning text-dark">Negócios</span>
           </div>
         </a>
 
-        <a href="noticia-amazon.html" class="em-alta-item text-decoration-none">
-          <span class="rank-number">5</span>
+        <a href="#" class="em-alta-item">
+          <div class="rank-number">2</div>
           <div class="rank-text">
-            <h6 class="fw-semibold mb-1">Meta desenvolve novo headset de realidade virtual</h6>
-            <span class="badge bg-primary">Tecnologia</span>
+            <h6>Netflix revela lançamentos de outubro</h6>
+            <span class="badge bg-danger">Entretenimento</span>
+          </div>
+        </a>
+
+        <a href="#" class="em-alta-item">
+          <div class="rank-number">3</div>
+          <div class="rank-text">
+            <h6>Tesla apresenta novo carro elétrico</h6>
+            <span class="badge bg-secondary">Automóveis</span>
+          </div>
+        </a>
+
+        <a href="#" class="em-alta-item">
+          <div class="rank-number">4</div>
+          <div class="rank-text">
+            <h6>Amazon expande operações no Brasil</h6>
+            <span class="badge bg-warning text-dark">Negócios</span>
           </div>
         </a>
       </div>
     </div>
-    
-
-
+  </div>
 </section>
+
+
+
+
+
+
 
 <section class="container my-4">
 <!-- Publicidade -->
