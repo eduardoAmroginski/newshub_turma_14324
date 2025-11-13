@@ -1,6 +1,16 @@
 @import "./fonts.css";
 
 /* Footer */
+footer{
+    background-color: color-mix(in oklab, #ececf0 30%, #0000 0%);
+    margin-top: 2rem;
+    padding-block: 1.5rem;
+    padding-block-end: 0.5rem;
+    padding-inline: 10rem;
+    border-top-style: solid;
+    border-top-width: 1px;
+    border-color: #dcdcf0;
+}
 .footer__text__title{
     font-size: 1rem;
     font-weight: 500;
@@ -9,5 +19,14 @@
     font-size: 0.85rem;
 }
 .footer__btn{
-    background: rgb(77, 100, 121);
+    background: hsla(209, 14%, 50%, 0.616);
+}
+.footer__newsletter{
+    background-color: color-mix(in oklab, hsla(240, 4%, 52%, 0.137) 100%, #0000 0%);
+    border-radius: 8px;
+    border-style: solid;
+    border-width: 0.4px;
+    border-color: hsla(0, 0%, 45%, 0.171);
+    padding: 0.25rem;
+    margin-top: 0.35rem;
 }
