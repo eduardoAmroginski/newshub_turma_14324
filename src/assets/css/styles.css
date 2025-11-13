@@ -1,1 +1,13 @@
 @import "./fonts.css";
+
+/* Footer */
+.footer__text__title{
+    font-size: 1rem;
+    font-weight: 500;
+}
+.footer__text{
+    font-size: 0.85rem;
+}
+.footer__btn{
+    background: rgb(77, 100, 121);
+}
