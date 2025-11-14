@@ -1,0 +1,33 @@
+.card-noticias {
+background: white;
+border-radius: 15px;
+box-shadow: lightgrey;
+width: 250px;
+padding: 20px;
+text-align: center;
+}
+
+.title-noticia {
+    color: black;
+    font-size: 30px;
+}
+
+.text-noticia {
+    color: rgb(8, 8, 8);
+    font-size: 15px;
+}
+
+.cardquadrado {
+    display: flex;
+    flex-direction: column;
+    width: 18rem;
+}
+
+.card-corpo {
+background: #fff;
+border-radius: 15px;
+box-shadow: lightgrey;
+width: 250px;
+padding: 20px;
+text-align:left;
+}
