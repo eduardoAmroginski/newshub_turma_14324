@@ -4,12 +4,15 @@ footer{
     margin-top: 2rem;
     padding-block: 1.5rem;
     padding-block-end: 0.5rem;
-    padding-inline: 10rem;
     border-top-style: solid;
     border-top-width: 1px;
     border-color: #dcdcf0;
 }
+.footer__container{
+    max-width: 80%;
+}
 .footer__text__title{
+    color: black;
     font-size: 1rem;
     font-weight: 500;
 }
@@ -27,4 +30,16 @@ footer{
     border-color: hsla(0, 0%, 45%, 0.171);
     padding: 0.25rem;
     margin-top: 0.35rem;
+    max-width: 25rem;
+
+    ::placeholder{
+        font-size: small;
+    }
+    input{
+        background-color: white;
+        border-radius: 5px;
+    }
+}
+.bi{
+    color: rgba(46, 46, 46, 0.87);
 }
