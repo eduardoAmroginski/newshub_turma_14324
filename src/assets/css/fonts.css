@@ -1,0 +1,10 @@
+@font-face {
+    font-family: 'Moon Get';
+    src: url("../fonts/moon_get/moon_get-Heavy.otf") format('opentype'),
+        url("../fonts/moon_get/moon_get-Heavy.ttf") format('truetype');
+}
+
+@font-face {
+    font-family: 'Heavitas';
+    src: url("../fonts/heavitas/Heavitas.ttf") format("truetype");
+}
