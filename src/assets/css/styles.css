@@ -9,7 +9,12 @@ footer{
     border-top-style: solid;
     border-top-width: 1px;
     border-color: #dcdcf0;
+
+    a:hover{
+        color: black;
+    }
 }
+
 .footer__container{
     max-width: 80%;
 }
@@ -20,6 +25,8 @@ footer{
 }
 .footer__text{
     font-size: 0.85rem;
+    text-decoration: none;
+    color: rgba(33, 37, 41, 0.75);
 }
 .footer__btn{
     background: hsla(209, 14%, 50%, 0.616);
