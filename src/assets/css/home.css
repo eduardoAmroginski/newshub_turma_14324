@@ -1,0 +1,390 @@
+@import "./fonts.css";
+
+/* ======= ESTILO PADRÃO DOS TÍTULOS ======= */
+#noticias-principais h4,
+#noticias-nacionais h4,
+#noticias-regionais h4,
+#em-alta h4 {
+  border-left: 4px solid #000;
+  padding-left: 8px;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+/* ===== CARROSSEL DE NOTÍCIAS ===== */
+#carouselNoticias {
+  max-width: 100%;
+  overflow: hidden;
+  border-radius: 10px;
+}
+#carouselNoticias .carousel-item {
+  height: 500px; /* Altura consistente */
+  position: relative;
+}
+#carouselNoticias .carousel-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(65%);
+  transition: transform 0.5s ease; /* animação suave */
+}
+
+#carouselNoticias .carousel-item:hover img {
+  transform: scale(1.05); /* aumenta levemente a imagem */
+}
+
+/* ===== TEXTO SOBRE O CARROSSEL ===== */
+#carouselNoticias .card-img-overlay {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  text-align: left;
+  padding: 0 70px 40px 70px; /* ← padding lateral menor e proporcional às setas */
+  color: #fff;
+  background: linear-gradient(
+    rgba(0, 0, 0, 0.3),
+    rgba(0, 0, 0, 0.3)
+  );
+}
+#carouselNoticias .card-img-overlay h5 {
+  font-size: 1.9rem;
+  font-weight: 600;
+  line-height: 1.3;
+}
+#carouselNoticias .card-img-overlay p {
+  font-size: 1rem;
+  opacity: 0.9;
+}
+#carouselNoticias .news-meta {
+  font-size: 0.9rem;
+  opacity: 0.85;
+}
+
+/* ===== BOTÕES DE NAVEGAÇÃO ===== */
+#carouselNoticias .carousel-control-prev,
+#carouselNoticias .carousel-control-next {
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+#carouselNoticias .carousel-control-prev-icon,
+#carouselNoticias .carousel-control-next-icon {
+  filter: invert(1) brightness(0.2); /* seta preta */
+}
+
+/* ======= CARROSSEL HORIZONTAL - NOTÍCIAS NACIONAIS ======= */
+
+.news-carousel {
+  position: relative;
+  overflow: hidden;
+}
+
+.carousel-inner-custom {
+  display: flex;
+  overflow-x: auto; /* scroll horizontal */
+  scroll-behavior: smooth;
+  gap: 1rem;
+  padding-bottom: 1rem;
+  scrollbar-width: none; /* Firefox */
+}
+
+.carousel-inner-custom::-webkit-scrollbar {
+  display: none; /* Chrome, Edge, Safari */
+}
+
+/* ===== NEWS CARD ===== */
+
+.news-card {
+  flex: 0 0 calc(33.333% - 1rem); /* 3 cards por vez */
+  min-width: calc(33.333% - 1rem);
+  box-sizing: border-box;
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  color: inherit;
+  transition: transform 0.2s ease-in-out;
+}
+
+.news-card:hover {
+  transform: translateY(-5px);
+}
+
+.news-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.news-card .card-body {
+  padding: 0.75rem 1rem;
+}
+
+.news-card .badge {
+  font-size: 0.75rem;
+}
+
+/* ===== BOTÕES ===== */
+
+.carousel-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0,0,0,0.5);
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+  transition: background 0.2s ease-in-out;
+}
+
+.carousel-btn:hover {
+  background: rgba(0,0,0,0.8);
+}
+
+.carousel-btn.left {
+  left: 10px;
+}
+
+.carousel-btn.right {
+  right: 10px;
+}
+
+/* ===== RESPONSIVO ===== */
+
+@media (max-width: 992px) {
+  .news-card {
+    flex: 0 0 calc(50% - 1rem);
+    min-width: calc(50% - 1rem);
+  }
+}
+
+@media (max-width: 576px) {
+  .news-card {
+    flex: 0 0 calc(100% - 1rem);
+    min-width: calc(100% - 1rem);
+  }
+}
+
+/* ============================
+   SEÇÃO: NOTÍCIAS REGIONAIS
+============================ */
+
+.noticias-regionais {
+  margin-top: 4rem;
+}
+
+/* ======== CARDS ======== */
+
+#noticias-regionais .card {
+  transition: transform 0.2s ease-in-out;
+  border-radius: 10px;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+#noticias-regionais .card:hover {
+  transform: translateY(-3px);
+}
+
+#noticias-regionais .card-title {
+  font-size: 0.95rem;
+  line-height: 1.3;
+}
+
+#noticias-regionais .card-text {
+  font-size: 0.85rem;
+}
+
+#noticias-regionais .card-img-top {
+    height: 200px; /* ajuste a altura como desejar */
+    object-fit: cover;
+    width: 100%;
+    border-radius: 10px 10px 0 0; /* mantém o topo arredondado */
+  }
+  
+
+/* ======== EM ALTA ======== */
+
+.noticias-regionais .em-alta h5 {
+  font-size: 1rem;
+  border-left: 3px solid #000;
+  font-weight: 600;
+}
+
+.noticias-regionais .em-alta .list-group-item {
+  background: none;
+  line-height: 1.2;
+  transition: color 0.2s ease-in-out;
+}
+
+.noticias-regionais .em-alta .list-group-item + .list-group-item {
+  margin-top: 0.3rem;
+}
+
+.noticias-regionais .em-alta h6 {
+  font-size: 0.85rem;
+  font-weight: 600;
+  margin-bottom: 2px;
+}
+
+.noticias-regionais .em-alta h6:hover {
+  color: #3266ff;
+  cursor: pointer;
+}
+
+.noticias-regionais .em-alta small {
+  font-size: 0.7rem;
+  color: #777;
+}
+
+/* ======== LAYOUT DE COLUNAS ======== */
+
+.noticias-regionais .col-lg-4 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* ======== RESPONSIVIDADE ======== */
+
+@media (max-width: 991px) {
+  .noticias-regionais .col-lg-4 {
+    margin-top: 2rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .noticias-regionais .card-title {
+    font-size: 0.9rem;
+  }
+
+  .noticias-regionais .card-text {
+    font-size: 0.8rem;
+  }
+
+  .noticias-regionais .em-alta h5 {
+    font-size: 0.95rem;
+  }
+}
+
+
+/* ======= EM ALTA ======= */
+.em-alta-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1.2rem;
+  padding-bottom: 0.8rem;
+  border-bottom: 1px solid #e9ecef;
+  transition: all 0.2s ease-in-out;
+  color: inherit;
+  text-decoration: none;
+}
+
+.rank-number {
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: #0d6efd;
+  line-height: 1;
+  min-width: 40px;
+  text-align: center;
+}
+
+.rank-text h6 {
+  font-size: 1rem;
+  font-weight: 600;
+  margin: 0;
+  color: #212529;
+}
+
+.rank-text .badge {
+  font-size: 0.75rem;
+  font-weight: 500;
+  padding: 0.35em 0.65em;
+  border-radius: 4px;
+}
+
+.noticias-regionais .card {
+  border-radius: 12px;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.noticias-regionais .card:hover {
+  transform: translateY(-5px);
+}
+
+.noticias-regionais .badge {
+  font-size: 0.75rem;
+  border-radius: 6px;
+}
+
+.noticias-regionais .list-group-item {
+  border: none;
+  padding-bottom: 0.8rem;
+}
+
+
+/* Remove última borda */
+.em-alta-item:last-child {
+  border-bottom: none;
+}
+
+/* ======= HOVER ======= */
+.em-alta-item:hover {
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  transform: translateX(5px);
+}
+
+.em-alta-item:hover .rank-number {
+  color: #b536c7;
+}
+
+/* ======= RESPONSIVO ======= */
+@media (max-width: 576px) {
+  .rank-number {
+    font-size: 2rem;
+  }
+  .rank-text h6 {
+    font-size: 0.95rem;
+  }
+}
+
+/* ======= PUBLICIDADE ======= */
+.publicidade {
+    margin: 2rem 0;
+  }
+  
+  .publicidade-box {
+    background: linear-gradient(90deg, #3266ff, #b536c7);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    max-width: 100%;
+    margin: 0 auto;
+    border-radius: 8px;
+    padding: 1rem;
+    color: #fff;
+    text-align: center;
+  }
+  
+  /* ======= AJUSTE DE ALTURA ======= */
+  .noticias-regionais .col-lg-4 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+

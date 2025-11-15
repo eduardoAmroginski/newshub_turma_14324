@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>NewsHub</title>
 
-  <!-- Bootstrap -->
+  <!-- Bootstrap CSS -->
   <link
     href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
     rel="stylesheet"
@@ -13,373 +13,443 @@
   
   <!-- CSS personalizado -->
   <link rel="stylesheet" href="./src/assets/css/styles.css" />
+  <link rel="stylesheet" href="./src/assets/css/home.css" />
 </head>
 
 <body>
-  <!-- HEADER -->
-  <header class="bg-dark text-white py-3">
-    <h3 class="text-center">Antonio</h3>
-  </header>
+
+  <!-- HEADER  -->
+  <header></header>
 
   <main>
+
     <!-- Notícias Principais - Mundial -->
     <section id="noticias-principais" class="container my-4">
+
       <h4>Notícias Principais - Mundial</h4>
 
+      <!-- Carrossel Bootstrap -->
       <div id="carouselNoticias" class="carousel slide" data-bs-ride="carousel">
+
         <div class="carousel-inner">
 
           <!-- Item 1 -->
           <div class="carousel-item active">
             <a href="noticia1.html" class="text-decoration-none text-white">
-            <img src="./src/assets/img/Mundial1.jpg" class="d-block w-100" alt="Imagem Inteligencia Artificial">
-            <div class="card-img-overlay d-flex flex-column justify-content-end bg-gradient">
-              <div>
-                <span class="badge bg-dark">Tecnologia</span>
-                <span class="badge bg-light text-dark">Mundial</span>
+              <img src="./src/assets/img/Mundial1.jpg" class="d-block w-100" alt="Imagem Inteligencia Artificial">
+
+              <!-- Overlay -->
+              <div class="card-img-overlay d-flex flex-column justify-content-end bg-gradient">
+
+                <!-- Categorias -->
+                <div>
+                  <span class="badge bg-dark">Tecnologia</span>
+                  <span class="badge bg-light text-dark">Mundial</span>
+                </div>
+
+                <!-- Título -->
+                <h5 class="mt-2 fw-semibold">
+                  Inteligência Artificial transforma a indústria tech com novas aplicações revolucionárias
+                </h5>
+
+                <!-- Descrição -->
+                <p class="small">
+                  Empresas de tecnologia investem bilhões em IA generativa e machine learning, prometendo revolucionar diversos setores da economia global.
+                </p>
+
+                <!-- Meta -->
+                <div class="news-meta small text-light">
+                  <span class="me-2">10 Out 2025</span>
+                  <i data-lucide="clock" class="text-white"></i>
+                  <span>5 min</span>
+                </div>
+
               </div>
-              <h5 class="mt-2 fw-semibold">Inteligência Artificial transforma a indústria tech com novas aplicações revolucionárias</h5>
-              <p class="small">Empresas de tecnologia investem bilhões em IA generativa e machine learning, prometendo revolucionar diversos setores da economia global.</p>
-              <div class="news-meta small text-light">
-                <span class="me-2">10 Out 2025 </span> 
-                <i data-lucide="clock" class="me-2 text-white"></i>
-                <span>5 min</span>
-              </div>
-            </div>
             </a>
           </div>
 
           <!-- Item 2 -->
           <div class="carousel-item">
             <a href="noticia1.html" class="text-decoration-none text-white">
-            <img src="./src/assets/img/Mundial2.jpg" class="d-block w-100" alt="Imagem de jogo RPG de mundo aberto">
-            <div class="card-img-overlay d-flex flex-column justify-content-end bg-gradient">
-              <div>
-                <span class="badge bg-dark">Jogos</span>
-                <span class="badge bg-light text-dark">Mundial</span>
-              </div>
-              <h5 class="mt-2 fw-semibold">Novo RPG de mundo aberto quebra recordes de vendas e críticas</h5>
-              <p class="small">Lançamento surpreende mercado com mecânicas inovadoras e gráficos de última geração, estabelecendo novo padrão para a indústria.</p>
-              <div class="news-meta small text-light">
-                <span class="me-2">10 Out 2025 </span> 
-                <i data-lucide="clock" class="me-2 text-white"></i>
-                <span>6 min</span>
-              </div>
-            </div>
-          </a>
-        </div>
 
-            <!-- Item 3 -->
+              <img src="./src/assets/img/Mundial2.jpg" class="d-block w-100" alt="Imagem de jogo RPG de mundo aberto">
+
+              <div class="card-img-overlay d-flex flex-column justify-content-end bg-gradient">
+                <div>
+                  <span class="badge bg-dark">Jogos</span>
+                  <span class="badge bg-light text-dark">Mundial</span>
+                </div>
+
+                <h5 class="mt-2 fw-semibold">Novo RPG de mundo aberto quebra recordes de vendas e críticas</h5>
+
+                <p class="small">
+                  Lançamento surpreende mercado com mecânicas inovadoras e gráficos de última geração, estabelecendo novo padrão para a indústria.
+                </p>
+
+                <div class="news-meta small text-light">
+                  <span class="me-2">10 Out 2025</span>
+                  <i data-lucide="clock" class="text-white"></i>
+                  <span>6 min</span>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <!-- Item 3 -->
           <div class="carousel-item">
-            <img src="./src/assets/img/Mundial3.jpg" class=d-block w-100 alt="Imagem da missão espacial histórica">
+
+            <img src="./src/assets/img/Mundial3.jpg" class="d-block w-100" alt="Imagem da missão espacial histórica">
+
             <div class="card-img-overlay d-flex flex-column justify-content-end bg-gradient">
+
               <div>
                 <span class="badge bg-dark mb-2">Ciência</span>
                 <span class="badge bg-light text-dark">Mundial</span>
               </div>
+
               <h5 class="mt-2 fw-semibold">Missão espacial histórica prepara nova era da exploração lunar</h5>
-              <p class="small">Agências espaciais internacionais anunciam planos ambiciosos para estabelecer base permanente na Lua até 2030.</p>
+
+              <p class="small">
+                Agências espaciais internacionais anunciam planos ambiciosos para estabelecer base permanente na Lua até 2030.
+              </p>
+
               <div class="news-meta small text-light">
-                <span class="me-2">10 Out 2025 </span> 
-                <i data-lucide="clock" class="me-2 text-white"></i>
+                <span class="me-2">10 Out 2025</span>
+                <i data-lucide="clock" class="text-white"></i>
                 <span>6 min</span>
               </div>
+
             </div>
+
           </div>
 
           <!-- Item 4 -->
           <div class="carousel-item">
-            <img src="./src/assets/img/Mundial4.jpg" class=d-block w-100 alt="Imagem de realidade virtual">
+
+            <img src="./src/assets/img/Mundial4.jpg" class="d-block w-100" alt="Imagem de realidade virtual">
+
             <div class="card-img-overlay d-flex flex-column justify-content-end bg-gradient">
+
               <div>
                 <span class="badge bg-dark mb-2">Entretenimento</span>
                 <span class="badge bg-light text-dark">Mundial</span>
               </div>
+
               <h5 class="mt-2 fw-semibold">Realidade virtual redefine experiência de entretenimento digital</h5>
-              <p class="small">Novos headsets VR prometem imersão sem precedentes com gráficos realistas e interação avançada.</p>
-              <div class="news-meta small text-light">
-                <span class="me-2">9 Out 2025 </span> 
-                <i data-lucide="clock" class="me-2 text-white"></i>
+
+              <p class="small">
+                Novos headsets VR prometem imersão sem precedentes com gráficos realistas e interação avançada.
+              </p>
+
+              <div class="text-light small">
+                <span class="me-2">9 Out 2025</span>
+                <i data-lucide="clock" class="text-white"></i>
                 <span>4 min</span>
               </div>
+
             </div>
           </div>
 
           <!-- Item 5 -->
           <div class="carousel-item">
-            <img src="./src/assets/img/Mundial5.jpg" class=d-block w-100 alt="Imagem de veiculos elétricos">
+
+            <img src="./src/assets/img/Mundial5.jpg" class="d-block w-100" alt="Imagem de veiculos elétricos">
+
             <div class="card-img-overlay d-flex flex-column justify-content-end bg-gradient">
+
               <div>
                 <span class="badge bg-dark mb-2">Negócios</span>
                 <span class="badge bg-light text-dark">Mundial</span>
               </div>
+
               <h5 class="mt-2 fw-semibold">Veículos elétricos dominam mercado automotivo global</h5>
-              <p class="small">Vendas de carros elétricos superam expectativas enquanto fabricantes aceleram transição para eletrificação total.</p>
-              <div class="news-meta small text-light">
-                <span class="me-2">9 Out 2025 </span> 
-                <i data-lucide="clock" class="me-2 text-white"></i>
+
+              <p class="small">
+                Vendas de carros elétricos superam expectativas enquanto fabricantes aceleram transição para eletrificação total.
+              </p>
+
+              <div class="small text-light">
+                <span class="me-2">9 Out 2025</span>
+                <i data-lucide="clock" class="text-white"></i>
                 <span>5 min</span>
               </div>
+
             </div>
           </div>
 
         </div>
 
-        <!-- Controles do carrossel -->
+        <!-- Controles do Carrossel -->
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselNoticias" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="carousel-control-prev-icon"></span>
           <span class="visually-hidden">Anterior</span>
         </button>
+
         <button class="carousel-control-next" type="button" data-bs-target="#carouselNoticias" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="carousel-control-next-icon"></span>
           <span class="visually-hidden">Próximo</span>
         </button>
+
       </div>
+
     </section>
 
-      <!-- Notícias Nacionais -->
-      <section id="noticias-nacionais" class="container my-5">
-        <h4 class="mb-4">Notícias Nacionais</h4>
+    <!-- Notícias Nacionais -->
+    <section id="noticias-nacionais" class="container my-5">
 
-        <div class="news-carousel position-relative">
-          <!-- Botão anterior -->
-          <button class="carousel-btn left" id="prevBtn">&#10094;</button>
+      <h4 class="mb-4">Notícias Nacionais</h4>
 
-          <!-- Área de cards -->
-          <div class="carousel-inner-custom" id="carouselNacional">
-            <!-- Card 1 -->
-            <a href="nacional1.html" class="news-card text-decoration-none text-dark">
-              <img src="./src/assets/img/Nacional1.jpg" alt="Blockchain">
-              <div class="card-body">
-                <span class="badge bg-primary me-1">Tecnologia</span>
-                <span class="badge bg-secondary">Nacional</span>
-                <h5 class="mt-2">Startup brasileira desenvolve solução inovadora em blockchain</h5>
-                <p>Empresa nacional recebe investimento milionário para expandir plataforma de segurança digital.</p>
-                <!-- <small class="text-muted">10 Out 2025 · 4 min</small> -->
-                <span class="me-2">9 Out 2025 </span> 
-                <i data-lucide="clock" class="me-2 text-dark"></i>
-                <span>5 min</span>
-              </div>
-            </a>
+      <!-- Carrossel horizontal personalizado -->
+      <div class="news-carousel position-relative">
 
-            <!-- Card 2 -->
-            <a href="nacional2.html" class="news-card text-decoration-none text-dark">
-              <img src="./src/assets/img/Nacional2.jpg" alt="E-commerce">
-              <div class="card-body">
-                <span class="badge bg-dark me-1">Negócios</span>
-                <span class="badge bg-secondary">Nacional</span>
-                <h5 class="mt-2">Mercado brasileiro de e-commerce cresce 25%</h5>
-                <p>Setor impulsionado por novos hábitos de consumo e investimentos em logística.</p>
-                <small class="text-muted">9 Out 2025 · 5 min</small>
-              </div>
-            </a>
+        <!-- Botão anterior -->
+        <button class="carousel-btn left" id="prevBtn">&#10094;</button>
 
-            <!-- Card 3 -->
-            <a href="nacional3.html" class="news-card text-decoration-none text-dark">
-              <img src="./src/assets/img/card.jpeg" alt="Saúde">
-              <div class="card-body">
-                <span class="badge bg-success me-1">Saúde</span>
-                <span class="badge bg-secondary">Nacional</span>
-                <h5 class="mt-2">Nova política de saúde pública beneficia cidades pequenas</h5>
-                <p>Iniciativa visa reduzir desigualdades regionais no acesso a serviços médicos.</p>
-                <small class="text-muted">8 Out 2025 · 3 min</small>
-              </div>
-            </a>
+        <!-- Container deslizante -->
+        <div class="carousel-inner-custom" id="carouselNacional">
 
-            <!-- Card 4 -->
-            <a href="nacional3.html" class="news-card text-decoration-none text-dark">
-              <img src="./src/assets/img/card.jpeg" alt="Saúde">
-              <div class="card-body">
-                <span class="badge bg-success me-1">Teste 1</span>
-                <span class="badge bg-secondary">Teste</span>
-                <h5 class="mt-2">Teste</h5>
-                <p>Testante se esta funcionando.</p>
-                <small class="text-muted">8 Out 2025 · 3 min</small>
-              </div>
-            </a>
-
-            <!-- Card 5 -->
-            <a href="nacional3.html" class="news-card text-decoration-none text-dark">
-              <img src="./src/assets/img/card.jpeg" alt="Saúde">
-              <div class="card-body">
-                <span class="badge bg-success me-1">Teste 1</span>
-                <span class="badge bg-secondary">Teste</span>
-                <h5 class="mt-2">Teste</h5>
-                <p>Testante se esta funcionando.</p>
-                <small class="text-muted">8 Out 2025 · 3 min</small>
-              </div>
-            </a>
-
-            <!-- Card 6 -->
-            <a href="nacional3.html" class="news-card text-decoration-none text-dark">
-              <img src="./src/assets/img/card.jpeg" alt="Saúde">
-              <div class="card-body">
-                <span class="badge bg-success me-1">Teste 1</span>
-                <span class="badge bg-secondary">Teste</span>
-                <h5 class="mt-2">Teste</h5>
-                <p>Testante se esta funcionando.</p>
-                <small class="text-muted">8 Out 2025 · 3 min</small>
-              </div>
-            </a>
-
-            <!-- Adicione quantos cards quiser -->
-          </div>
-
-          <!-- Botão próximo -->
-          <button class="carousel-btn right" id="nextBtn">&#10095;</button>
-        </div>
-      </section>
-
-<!-- regionais  -->
-<section id="noticias-regionais" class="container my-5">
-  <div class="row">
-    <!-- Coluna esquerda: Cards -->
-    <div class="col-lg-8">
-      <h4 class="mb-4">Notícias Regionais</h4>
-      <div class="row g-4">
-        <!-- Card 1 -->
-        <div class="col-md-6">
-          <div class="card border-0 shadow-sm h-100">
-            <img src="./src/assets/img/card.jpeg" class="card-img-top rounded-top" alt="Imagem 1">
+          <!-- CARD 1 -->
+          <a href="nacional1.html" class="news-card text-decoration-none text-dark">
+            <img src="./src/assets/img/Nacional1.jpg" alt="Blockchain">
             <div class="card-body">
-              <span class="badge bg-primary mb-2">Tecnologia</span>
-              <h6 class="card-title fw-bold">Hub de inovação em São Paulo atrai empresas de tecnologia</h6>
-              <p class="card-text text-muted small">Novo polo tecnológico promete gerar milhares de empregos na capital paulista.</p>
-              <div class="text-muted small">
-                <span>10 Out 2025</span> • <i class="bi bi-clock"></i> 4 min
-              </div>
+              <span class="badge bg-dark me-1">Tecnologia</span>
+              <h5 class="mt-2">Startup brasileira desenvolve solução inovadora em blockchain</h5>
+              <p>Empresa nacional recebe investimento milionário para expandir plataforma de segurança digital.</p>
+              <span class="me-2">9 Out 2025</span>
+              <i data-lucide="clock" class="text-dark"></i>
+              <span>5 min</span>
             </div>
-          </div>
+          </a>
+
+          <!-- CARD 2 -->
+          <a href="nacional2.html" class="news-card text-decoration-none text-dark">
+            <img src="./src/assets/img/Nacional2.jpg" alt="E-commerce">
+            <div class="card-body">
+              <span class="badge bg-dark me-1">Negócios</span>
+              <h5 class="mt-2">Mercado brasileiro de e-commerce cresce 25% no último trimestre</h5>
+              <p>Setor impulsionado por novos hábitos de consumo e investimentos em logística.</p>
+              <span class="me-2">9 Out 2025</span>
+              <i data-lucide="clock" class="text-dark"></i>
+              <span>5 min</span>
+            </div>
+          </a>
+
+          <!-- CARD 3 -->
+          <a href="nacional3.html" class="news-card text-decoration-none text-dark">
+            <img src="./src/assets/img/Nacional3.jpg" alt="Jogos">
+            <div class="card-body">
+              <span class="badge bg-dark me-1">Jogos</span>
+              <h5 class="mt-2">Desenvolvedores brasileiros lançam jogo indie premiado internacionalmente</h5>
+              <p>Título nacional conquista prêmios em festivais de games ao redor do mundo.</p>
+              <span class="me-2">9 Out 2025</span>
+              <i data-lucide="clock" class="text-dark"></i>
+              <span>4 min</span>
+            </div>
+          </a>
+
+          <!-- CARD 4 -->
+          <a href="nacional3.html" class="news-card text-decoration-none text-dark">
+            <img src="./src/assets/img/Nacional4.jpg" alt="Amazonia">
+            <div class="card-body">
+              <span class="badge bg-dark me-1">Ciência</span>
+              <h5 class="mt-2">Cientistas brasileiros fazem descoberta importante sobre Amazônia</h5>
+              <p>Pesquisa revela novos dados sobre biodiversidade e preservação da floresta.</p>
+              <span class="me-2">8 Out 2025</span>
+              <i data-lucide="clock" class="text-dark"></i>
+              <span>6 min</span>
+            </div>
+          </a>
+
+          <!-- CARD 5 -->
+          <a href="nacional3.html" class="news-card text-decoration-none text-dark">
+            <img src="./src/assets/img/Nacional5.jpg" alt="Saúde">
+            <div class="card-body">
+              <span class="badge bg-dark me-1">Entretenimento</span>
+              <h5 class="mt-2">Cinema nacional bate recordes de bilheteria neste ano</h5>
+              <p>Produções brasileiras conquistam público e crítica com histórias autênticas.</p>
+              <span class="me-2">8 Out 2025</span>
+              <i data-lucide="clock" class="text-dark"></i>
+              <span>5 min</span>
+            </div>
+          </a>
+
+        <!-- Adicione quantos cards quiser -->
         </div>
 
-        <!-- Card 2 -->
-        <div class="col-md-6">
-          <div class="card border-0 shadow-sm h-100">
-            <img src="./src/assets/img/card.jpeg" class="card-img-top rounded-top" alt="Imagem 2">
-            <div class="card-body">
-              <span class="badge bg-warning mb-2">Negócios</span>
-              <h6 class="card-title fw-bold">Empresas do Sul do Brasil expandem exportações para América Latina</h6>
-              <p class="card-text text-muted small">Região Sul consolida posição como porta de entrada para mercados vizinhos.</p>
-              <div class="text-muted small">
-                <span>9 Out 2025</span> • <i class="bi bi-clock"></i> 5 min
+        <!-- Botão próximo -->
+        <button class="carousel-btn right" id="nextBtn">&#10095;</button>
+
+      </div>
+
+    </section>
+
+    <!-- Noticias Regionais  -->
+    <section id="noticias-regionais" class="container my-5">
+
+      <div class="row">
+
+        <!-- Coluna esquerda: Cards -->
+        <div class="col-lg-8">
+
+          <h4 class="mb-4">Notícias Regionais</h4>
+
+          <div class="row g-4">
+
+            <!-- CARD 1 -->
+            <div class="col-md-6">
+              <div class="card border-0 shadow-sm h-100">
+                <img src="./src/assets/img/Regional1.jpg" class="card-img-top" alt="Imagem Gub de Inovação">
+                <div class="card-body">
+                  <span class="badge bg-dark mb-2">Tecnologia</span>
+                  <h6 class="fw-bold">Hub de inovação em São Paulo atrai empresas de tecnologia</h6>
+                  <p class="small text-muted">Novo polo tecnológico promete gerar milhares de empregos na capital paulista.</p>
+                  <div class="text-muted small">
+                    <span class="me-2">10 Out 2025</span>
+                    <i data-lucide="clock"></i>
+                    <span>4 min</span>
+                  </div>
+                </div>
               </div>
             </div>
+
+            <!-- CARD 2 -->
+            <div class="col-md-6">
+              <div class="card border-0 shadow-sm h-100">
+                <img src="./src/assets/img/Regional2.jpg" class="card-img-top" alt="Imagem Exportações América Latina">
+                <div class="card-body">
+                  <span class="badge bg-dark mb-2">Negócios</span>
+                  <h6 class="fw-bold">Empresas do Sul do Brasil expandem exportações para América Latina</h6>
+                  <p class="small text-muted">Região Sul consolida posição como porta de entrada para mercados vizinhos.</p>
+                  <div class="text-muted small">
+                    <span class="me-2">9 Out 2025</span>
+                    <i data-lucide="clock"></i>
+                    <span>5 min</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- CARD 3 -->
+            <div class="col-md-6">
+              <div class="card border-0 shadow-sm h-100">
+                <img src="./src/assets/img/Regional3.jpg" class="card-img-top" alt="Imagem Vacina Experimental">
+                <div class="card-body">
+                  <span class="badge bg-dark mb-2">Ciência</span>
+                  <h6 class="fw-bold">Universidade do Rio desenvolve vacina experimental promissora</h6>
+                  <p class="small text-muted">Pesquisadores cariocas avançam em estudos para combate a doenças tropicais.</p>
+                  <div class="text-muted small">
+                    <span class="me-2">9 Out 2025</span>
+                    <i data-lucide="clock"></i>
+                    <span>6 min</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- CARD 4 -->
+            <div class="col-md-6">
+              <div class="card border-0 shadow-sm h-100">
+                <img src="./src/assets/img/Regional4.jpg" class="card-img-top" alt="Imagem Festival de Música">
+                <div class="card-body">
+                  <span class="badge bg-dark mb-2">Entretenimento</span>
+                  <h6 class="fw-bold">Festival de música reúne milhares em Minas Gerais</h6>
+                  <p class="small text-muted">Evento cultural destaca talento regional e atrai turistas de todo o país.</p>
+                  <div class="text-muted small">
+                    <span class="me-2">8 Out 2025</span>
+                    <i data-lucide="clock"></i>
+                    <span>4 min</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
           </div>
         </div>
 
-        <!-- Card 3 -->
-        <div class="col-md-6">
-          <div class="card border-0 shadow-sm h-100">
-            <img src="./src/assets/img/card.jpeg" class="card-img-top rounded-top" alt="Imagem 3">
-            <div class="card-body">
-              <span class="badge bg-info mb-2">Ciência</span>
-              <h6 class="card-title fw-bold">Universidade do Rio desenvolve vacina experimental promissora</h6>
-              <p class="card-text text-muted small">Pesquisadores cariocas avançam em estudos para combate a doenças tropicais.</p>
-              <div class="text-muted small">
-                <span>9 Out 2025</span> • <i class="bi bi-clock"></i> 6 min
-              </div>
-            </div>
-          </div>
-        </div>
+        <!-- Coluna direita: Em Alta -->
+        <div class="col-lg-4">
 
-        <!-- Card 4 -->
-        <div class="col-md-6">
-          <div class="card border-0 shadow-sm h-100">
-            <img src="./src/assets/img/card.jpeg" class="card-img-top rounded-top" alt="Imagem 4">
-            <div class="card-body">
-              <span class="badge bg-danger mb-2">Entretenimento</span>
-              <h6 class="card-title fw-bold">Festival de música reúne milhares em Minas Gerais</h6>
-              <p class="card-text text-muted small">Evento cultural destaca talento regional e atrai turistas de todo o país.</p>
-              <div class="text-muted small">
-                <span>8 Out 2025</span> • <i class="bi bi-clock"></i> 4 min
+          <div class="em-alta mb-4">
+            <h4 class="mb-3">Em Alta</h4>
+
+            <!-- Cada item do ranking -->
+            <a href="#" class="em-alta-item">
+              <div class="rank-number">1</div>
+              <div class="rank-text">
+                <h6>Apple anuncia evento especial</h6>
+                <span class="badge bg-dark">Tecnologia</span>
               </div>
-            </div>
+            </a>
+
+            <a href="#" class="em-alta-item">
+              <div class="rank-number">2</div>
+              <div class="rank-text">
+                <h6>Netflix revela lançamentos de outubro</h6>
+                <span class="badge bg-dark">Entretenimento</span>
+              </div>
+            </a>
+
+            <a href="#" class="em-alta-item">
+              <div class="rank-number">3</div>
+              <div class="rank-text">
+                <h6>Tesla apresenta novo carro elétrico</h6>
+                <span class="badge bg-dark">Automóveis</span>
+              </div>
+            </a>
+
+            <a href="#" class="em-alta-item">
+              <div class="rank-number">4</div>
+              <div class="rank-text">
+                <h6>Amazon expande operações no Brasil</h6>
+                <span class="badge bg-dark">Negócios</span>
+              </div>
+            </a>
+
+            <a href="#" class="em-alta-item">
+              <div class="rank-number">5</div>
+              <div class="rank-text">
+                <h6>Meta desenvolve novo headset de realidade virtual</h6>
+                <span class="badge bg-dark">Tecnologia</span>
+              </div>
+            </a>
+
           </div>
+
         </div>
       </div>
-    </div>
 
-    <!-- Coluna direita: Em Alta -->
-    <div class="col-lg-4">
-      <div class="em-alta mb-4">
-        <h4 class="mb-3">Em Alta</h4>
+    </section>
 
-        <a href="#" class="em-alta-item">
-          <div class="rank-number">1</div>
-          <div class="rank-text">
-            <h6>Apple anuncia evento especial</h6>
-            <span class="badge bg-primary">Tecnologia</span>
-          </div>
-        </a>
+    <!-- Publicidade  -->
+    <section class="container my-4">
 
-        <a href="#" class="em-alta-item">
-          <div class="rank-number">2</div>
-          <div class="rank-text">
-            <h6>Netflix revela lançamentos de outubro</h6>
-            <span class="badge bg-danger">Entretenimento</span>
-          </div>
-        </a>
-
-        <a href="#" class="em-alta-item">
-          <div class="rank-number">3</div>
-          <div class="rank-text">
-            <h6>Tesla apresenta novo carro elétrico</h6>
-            <span class="badge bg-secondary">Automóveis</span>
-          </div>
-        </a>
-
-        <a href="#" class="em-alta-item">
-          <div class="rank-number">4</div>
-          <div class="rank-text">
-            <h6>Amazon expande operações no Brasil</h6>
-            <span class="badge bg-warning text-dark">Negócios</span>
-          </div>
-        </a>
-      </div>
-    </div>
-  </div>
-</section>
-
-
-
-
-
-
-
-<section class="container my-4">
-<!-- Publicidade -->
       <div class="publicidade text-center">
-        <small class="text-muted text-uppercase ">Publicidade</small>
-        <div class="publicidade-box mt-2 p-4 text-white rounded-3 shadow ">
+
+        <small class="text-muted text-uppercase">Publicidade</small>
+
+        <div class="publicidade-box mt-2 p-4 text-white rounded-3 shadow">
           <h6 class="mb-1">Espaço Publicitário Disponível</h6>
           <p class="small mb-0">Anuncie aqui e alcance milhares de leitores interessados em tecnologia e inovação.</p>
         </div>
+
       </div>
-      
-    </div>
-  </div>
-  </div>
-</section>
 
+    </section>
 
-
-    
   </main>
 
-  <!-- FOOTER -->
-  <footer class="bg-dark text-white text-center py-3 mt-5">
-    <h3>Jonathan</h3>
-  </footer>
+  <!-- Footer  -->
+  <footer></footer>
 
-  <!-- Ícones Lucide – inclua uma vez, antes do </body> -->
-<script src="https://unpkg.com/lucide@latest"></script>
-<script>
-  // Chama apenas uma vez, após o carregamento do script
-  lucide.createIcons();
-</script>
+  <!-- Ícones Lucide -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <script>
+    lucide.createIcons();
+  </script>
 
   <!-- Scripts -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
   <script src="./src/assets/js/script.js"></script>
+
 </body>
 </html>
