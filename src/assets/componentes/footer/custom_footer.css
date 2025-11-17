@@ -1,10 +1,8 @@
-@import "./fonts.css";
-
 /* Footer */
 footer{
     background-color: color-mix(in oklab, #ececf0 30%, #0000 0%);
     margin-top: 2rem;
-    padding-block: 1.5rem;
+    padding-block: 1.75rem;
     padding-block-end: 0.5rem;
     border-top-style: solid;
     border-top-width: 1px;
