@@ -1,1 +1,2 @@
-console.log("Carregou js")
+import "../../assets/componentes/footer/insertFooter.js"
+
