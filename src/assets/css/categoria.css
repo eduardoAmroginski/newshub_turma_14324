@@ -1,0 +1,20 @@
+main{
+    display: flex;
+    justify-content: center;
+}
+.container__categoria{
+    border-color: blue;
+    border-style: double;
+    background-color: aqua;
+}
+.container__categoria__title{
+    display: inline-flex;
+    
+    h6{
+        display: inline-flex;
+        font-size: 0.75rem;
+        background-color: oklch(.95 .0058 264.53);
+        border-radius: 10px;
+        height: fit-content;
+    }
+}
