@@ -6,7 +6,7 @@ export async function fetchTopHeadlines() {
   try {
     // Monta a URL do endpoint da NewsAPI, incluindo o país (us = Estados Unidos)
     // e a chave da API como parâmetro de autenticação.
-    const endpoint = `https://newsapi.org/v2everything?&apiKey=${API_KEY}`;
+    const endpoint = `https://newsapi.org/v2/top-headlines?country=us&apiKey=${API_KEY}`;
 
     // Faz a requisição HTTP utilizando a função fetch(), que retorna uma Promise.
     // Como a função é assíncrona, usamos "await" para aguardar a resposta.
