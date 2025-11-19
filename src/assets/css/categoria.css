@@ -2,12 +2,13 @@ main{
     display: flex;
     justify-content: center;
 }
-.container__categoria{
-    border-color: blue;
+.container__header{
+    /* Temporary settings */
+    border-color: blue; 
     border-style: double;
     background-color: aqua;
 }
-.container__categoria__title{
+.container__header__title{
     display: inline-flex;
     
     h6{
