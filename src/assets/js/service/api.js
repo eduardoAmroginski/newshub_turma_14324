@@ -30,3 +30,23 @@ export async function fetchTopHeadlines() {
     console.log("Não foi possivel carregar as noticia principais");
   }
 }
+export async function fetchEverything(buscanoticia, proximabusca=1) {
+  
+  try {
+
+const endpoint = `https://newsapi.org/v2/everything?q=${buscanoticia}&sortBy=relevancy&page=${proximabusca}&apiKey=${API_KEY}`;
+
+const response = await fetch(endpoint);
+
+if (!response.ok) {
+  throw new Error("Erro na requisição");
+}
+
+const data = await response.json();
+
+return data.articles;
+  } catch (error) {
+
+    console.log("Não foi possivel carregar a busca solicitada");
+  }
+}

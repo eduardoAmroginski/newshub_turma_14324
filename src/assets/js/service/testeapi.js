@@ -1,4 +1,4 @@
-import { fetchTopHeadlines } from "./api.js";
+import { fetchEverything } from "./api.js";
 
-const noticiasdestaque=await fetchTopHeadlines()
-console.log("noticiasdestaque: ", noticiasdestaque)
+const proximabusca=await fetchEverything("esportes",2)
+console.log("proximabusca: ",proximabusca)
