@@ -1,6 +1,7 @@
 main{
-    display: flex;
-    justify-content: center;
+    border-color: orange; 
+    border-style: double;
+    background-color: green;
 }
 .container__header{
     /* Temporary settings */
@@ -8,6 +9,7 @@ main{
     border-style: double;
     background-color: aqua;
 }
+
 .container__header__title{
     display: inline-flex;
     
@@ -18,4 +20,64 @@ main{
         border-radius: 10px;
         height: fit-content;
     }
+}
+
+.container__content{
+    display: grid;
+    justify-content: space-between;
+    align-items: start;
+}
+
+.content__carousel{
+    width: 50rem;
+    height: 30rem;
+    border-color: blue;
+    border-style: double;
+    background-color: aquamarine;
+}
+
+.content__carousel__header{
+    padding: 0.25rem 0.5rem 0.5rem;
+}
+
+.content__carousel__carousel{
+    width: 100%;
+    height: 25rem;
+    border-color: red;
+    border-style: double;
+    background-color: lightcoral;
+}
+
+.content__cards{
+    display: block;
+    width: 50rem;
+    height: 25em;
+    border-color: orange;
+    border-style: double;
+    background-color: yellow;
+}
+
+.cards__header{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: fit-content;
+    border-color: rgb(133, 12, 32);
+    border-style: double;
+    background-color: beige;
+}
+.cards__content{
+    width: 100%;
+    height: 20rem;
+    border-color: rgb(9, 88, 52);
+    border-style: double;
+    background-color: rgb(232, 220, 245);
+}
+
+.content__headlines{
+    width: 100%;
+    height: 20rem;
+    border-color: rgb(92, 245, 4);
+    border-style: double;
+    background-color: rgb(22, 0, 46);
 }
