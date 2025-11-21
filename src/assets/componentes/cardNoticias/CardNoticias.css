@@ -1,0 +1,53 @@
+.card-noticias {
+background: white;
+width: 200px;
+padding: 20px;
+text-align: center;
+}
+
+.title-noticia {
+    font-family: "Moon Get";
+    color: black;
+    font-size: 30px;
+}
+
+.text-noticia {
+    font-family: "Heavitas";
+    color: rgb(8, 8, 8);
+    font-size: 15px;
+}
+
+.cardquadrado {
+    display: flex;
+    flex-direction: column;
+    
+   
+}
+
+.card-corpo {
+background: #fff;
+border-radius: 100px;
+box-shadow: lightgrey;
+padding: 15px;
+text-align:left;
+}
+
+.tamanhocard{
+    width: 28rem;
+    border-radius: 30px;
+    box-shadow: lightgray;  
+    overflow: hidden;
+}
+
+.tamanhocard:hover img{
+    transform: scale(2);
+}
+
+.tamanhocard img{
+    transition: transform 0.2s ease-in-out;
+}
+
+    .container-imagem {
+        overflow: hidden; 
+        transition: transform 0.3s ease-in-out;
+    }
