@@ -108,14 +108,18 @@ main{
 .categories__btn{
     display: flex;
     flex-wrap: wrap;
-    row-gap: 1rem;
+    row-gap: 0.5rem;
     justify-content: space-around;
     padding: 5% 5%;
 }
 
 .btn__custom{
     padding: 0 5%;
-    border-radius: 100px;
+    border-radius: 150px;
     border-style: solid;
     background-color: color-mix(in oklab, rgba(216, 214, 214, 0.226) 50%, rgba(203, 203, 206, 0.438) 50%);
+}
+
+.btn__custom__hidden{
+    display: none;
 }
