@@ -345,4 +345,53 @@ font-size: 2rem;
 .rank-text h6 {
 font-size: 0.95rem;
 }
+
+/* Loader
+body {
+  margin: 0;
+  padding: 0;
+  background: #000;
+  overflow: hidden;
+}
+
+/* Container geral */
+.loader-container {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    margin: 120px auto;
+  }
+  
+  /* Logo parado */
+  .loader-logo {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    z-index: 2;
+    filter: brightness(0) invert(1); /* deixa branco */
+  }
+  
+  /* Leite subindo */
+  .fill {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0%;
+    background: linear-gradient(180deg, #3266ff, #b536c7);
+    z-index: 1;
+    animation: fillUp 3s ease-in-out forwards;
+    mask-image: url("/src/assets/img/nh-logo.png");
+    mask-size: contain;
+    mask-repeat: no-repeat;
+    mask-position: center;
+  }
+  
+  /* Animação do leite subindo */
+  @keyframes fillUp {
+    from { height: 0%; }
+    to { height: 100%; }
+  }
+  
+
 }
