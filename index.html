@@ -18,11 +18,15 @@
 
 
 <body>
-  <div class="loader-container">
-    <img src="/src/assets/img/nh-logo.png" class="loader-logo" alt="NewsHub Logo">
-    <div class="fill"></div>
-  </div>
 
+  <!-- LOADER -->
+  <div id="loader">
+    <div class="loader-content">
+      <img src="src/assets/img/nh-logo.png" alt="Logo" class="loader-logo" />
+      <div class="spinner"></div>
+    </div>
+  </div>
+  
   <!-- HEADER  -->
   <header></header>
 
@@ -466,6 +470,20 @@
   <!-- Scripts -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
   <script src="./src/assets/js/script.js"></script>  
+  <script src="./src/assets/js/home.js"></script>  
+
+  <script>
+    window.addEventListener("load", function () {
+      setTimeout(() => {
+        document.getElementById("loader").style.opacity = "0";
+        setTimeout(() => {
+          document.getElementById("loader").style.display = "none";
+        }, 500);
+      }, 600); //tempo na tela
+    });
+  </script>
+  
+
 
 </body>
 </html>

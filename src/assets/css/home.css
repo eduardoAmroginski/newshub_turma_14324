@@ -346,52 +346,54 @@ font-size: 2rem;
 font-size: 0.95rem;
 }
 
-/* Loader
-body {
-  margin: 0;
-  padding: 0;
-  background: #000;
-  overflow: hidden;
 }
 
-/* Container geral */
-.loader-container {
-    position: relative;
-    width: 200px;
-    height: 200px;
-    margin: 120px auto;
-  }
-  
-  /* Logo parado */
-  .loader-logo {
-    width: 100%;
-    height: 100%;
-    position: relative;
-    z-index: 2;
-    filter: brightness(0) invert(1); /* deixa branco */
-  }
-  
-  /* Leite subindo */
-  .fill {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 0%;
-    background: linear-gradient(180deg, #3266ff, #b536c7);
-    z-index: 1;
-    animation: fillUp 3s ease-in-out forwards;
-    mask-image: url("/src/assets/img/nh-logo.png");
-    mask-size: contain;
-    mask-repeat: no-repeat;
-    mask-position: center;
-  }
-  
-  /* Animação do leite subindo */
-  @keyframes fillUp {
-    from { height: 0%; }
-    to { height: 100%; }
-  }
-  
-
+/* LOADER */
+#loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #ffffff; /* fundo branco */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  transition: opacity 0.5s ease;
 }
+
+.loader-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px; /* espaçamento entre logo e spinner */
+}
+
+.loader-logo {
+  width: 120px;       /* ajuste como quiser */
+  height: auto;
+  object-fit: contain;
+}
+
+/* SPINNER */
+.spinner {
+  width: 60px;
+  height: 60px;
+  border: 4px solid rgba(0, 0, 0, 0.15); /* borda mais leve */
+  border-top-color: #000000; /* cor sólida preta */
+  border-radius: 50%;
+  animation: spin 1.2s linear infinite;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+
