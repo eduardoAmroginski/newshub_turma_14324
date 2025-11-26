@@ -9,8 +9,7 @@ class HeaderCustom extends HTMLElement {
                 
                 <div class="search-container">
                     <div class="search-box">
-                        
-                        <i class="bi bi-search"></i>
+                        <i class="fas fa-search"></i>
                         <input type="text" placeholder="Buscar notícias...">
                     </div>
                 </div>
@@ -35,7 +34,7 @@ class HeaderCustom extends HTMLElement {
         <!-- Menu mobile -->
         <div class="mobile-menu">
             <div class="search-icon-mobile">
-              <i class="bi bi-list"></i>
+                <i class="fas fa-search"></i>
             </div>
             <div class="hamburger" id="hamburger-btn">
                 <i class="fas fa-bars"></i>
