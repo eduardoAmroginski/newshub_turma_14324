@@ -1,8 +1,9 @@
-main{
+.page-category{
     margin: 0 10%;
     border-color: orange; 
     border-style: double;
     background-color: green;
+    min-height: 200vh;
 }
 /*Container header*/
 
@@ -28,7 +29,7 @@ main{
 .container__content{
     contain: content;
     display: grid;
-    grid-template-columns: 60% 40%;
+    grid-template-columns: 70% 30%;
 
 }
 
@@ -97,12 +98,14 @@ main{
 
 /*Container das Headlines*/
 .content__headlines{
+    contain: content ;
     width: 100%;
     height: 50rem;
     justify-self: end;
     border-color: rgb(92, 245, 4);
     border-style: double;
     background-color: rgb(22, 0, 46);
+    padding: 50% 0;
 }
 
 /*Container com boões de categorias*/
