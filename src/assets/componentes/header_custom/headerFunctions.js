@@ -64,6 +64,8 @@ export const applyHeaderEvents = () => {
         }
     });
 
+    
+
     // Efeito de clique em cards
     document.querySelectorAll('.news-card, .main-news').forEach(card => {
         card.addEventListener('click', function () {
