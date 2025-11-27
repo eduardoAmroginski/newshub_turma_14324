@@ -1,17 +1,18 @@
 /* Container principal do card */
+#container-noticias-alta{
+  top: 50px;
+  position: sticky;
+  position: -webkit-sticky;
+
+}
+
 .noticias-em-alta {
-  position: fixed;
-  bottom: 40px;
-  right: 30px;
-  width: 290px;
-  max-height: 440px;
   background: rgba(255, 255, 255, 0.85);
   border-radius: 18px;
   box-shadow: 0 6px 22px rgba(0,0,0,0.18);
   padding: 18px 20px;
   backdrop-filter: blur(8px);
   font-family: 'Poppins', sans-serif;
-  z-index: 900;
   overflow: hidden;
   transition: all 0.4s ease, opacity 0.4s ease;
 }
@@ -23,7 +24,7 @@
 
 /* Título da seção */
 .noticias-titulo {
-  font-size: 15px;
+  font-size: 1.30rem;
   font-weight: 600;
   margin-bottom: 10px;
   color: #111827;
@@ -57,7 +58,7 @@
 
 /* Número da notícia */
 .numero {
-  font-size: 13px;
+  font-size: 0.8rem;
   font-weight: 600;
   color: #9ca3af;
   width: 18px;
@@ -73,13 +74,13 @@
 }
 
 .conteudo .titulo {
-  font-size: 12.5px;
+  font-size: 1.25rem;
   color: #1f2937;
   margin: 0;
 }
 
 .conteudo .categoria {
-  font-size: 10.5px;
+  font-size: 0.75rem;
   color: #6b7280;
   margin-top: 1px;
 }
@@ -128,7 +129,6 @@
 /* Responsividade principal */
 @media (max-width: 1024px) {
   .noticias-em-alta {
-    width: 90%;
     right: 5%;
     bottom: 20px;
     max-height: 420px;
@@ -141,7 +141,6 @@
 
 @media (max-width: 600px) {
   .noticias-em-alta {
-    width: 90%;
     right: 5%;
     bottom: 15px;
     max-height: 410px;
