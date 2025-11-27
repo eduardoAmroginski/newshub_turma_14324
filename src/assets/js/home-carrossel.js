@@ -17,16 +17,17 @@ async function carregarCarrosselMundial() {
         item.classList.add("carousel-item");
         if (index === 0) item.classList.add("active");
 
-        const imagem = noticia.urlToImage
+        const imagem = noticia.urlToImage && noticia.urlToImage.startsWith("http")
         ? noticia.urlToImage
         : "./src/assets/img/default.jpg";
+
 
         item.innerHTML = `
         <img src="${imagem}" class="d-block w-100" alt="Imagem da notícia">
 
         <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-75 p-3 rounded-3">
-            <h5>${noticia.title}</h5>
-            <p>${noticia.description || ""}</p>
+            <h5>${noticia.title || "Título indisponível"}</h5>
+            <p>${noticia.description && noticia.description !== "[Removed]" ? noticia.description : ""}</p>
         </div>
         `;
 
