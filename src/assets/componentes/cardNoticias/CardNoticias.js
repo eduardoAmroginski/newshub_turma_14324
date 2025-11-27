@@ -8,7 +8,7 @@ class CardNoticias extends HTMLElement {
                     <img src="https://placehold.co/600x400" class="card-img-top " alt="...">
                 </div>
                 <div class="card-corpo">
-                    <h6><span class="badge text-bg-secondary">Tecnologia</span></h6>
+                    <h6><span class="badge text-bg-custom">Tecnologia</span></h6>
                     <h1 class="title-noticia">Card title</h1>
                     <p class="text-noticia">This is a longer card with supporting text below as a natural lead-in to
                         additional
