@@ -1,17 +1,294 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>NewsHub</title>
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
-        <link rel="stylesheet" href="../assets/css/styles.css" />
-    </head>
-    <body>
-        <h1>Pagina Noticia</h1>
-        <div id="container-noticias-alta"></div>        
-        <div id="container-footer-custom"></div>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-        <script type="module" src="../assets/js/script.js"></script>
-    </body>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Notícias – MeuSite</title>
+
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+
+  <!-- CSS da Página -->
+  <link rel="stylesheet" href="../assets/css/paginadenoticias.style.css">
+</head>
+<body>
+
+<main class="page-wrapper">
+
+    <!-- VOLTAR -->
+    <a class="back-link" href="#">
+        <svg class="icon" width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <path d="M15 6L9 12L15 18" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        Voltar para Tecnologia
+    </a>
+
+    <!-- BREADCRUMB -->
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+        <a href="#"><i class="bi bi-house-door"></i> Início</a>
+        <span>›</span>
+        <a href="#">Tecnologia</a>
+        <span>›</span>
+        <span class="current">Nova geração de smartphones traz recursos inovadores de fotografia</span>
+    </nav>
+
+    <!-- CATEGORIA -->
+    <div class="category-tag">Tecnologia</div>
+
+    <!-- TÍTULO -->
+    <h1 class="post-title">Nova geração de smartphones traz recursos inovadores de fotografia</h1>
+
+    <!-- METADADOS -->
+    <div class="post-meta">
+        <span>13 Out 2025</span>
+        <span class="dot">•</span>
+        <span>4 min</span>
+        <span class="dot">•</span>
+        <span>Por Ricardo Santos</span>
+    </div>
+
+    <!-- COMPARTILHAR -->
+    <div class="share-section">
+        <span class="share-label">Compartilhar:</span>
+
+        <div class="share-buttons">
+            <button class="share-btn" data-network="facebook"><i class="bi bi-facebook"></i> Facebook</button>
+            <button class="share-btn" data-network="twitter"><i class="bi bi-twitter-x"></i> Twitter</button>
+            <button class="share-btn" data-network="linkedin"><i class="bi bi-linkedin"></i> LinkedIn</button>
+            <button class="share-btn" data-network="copy"><i class="bi bi-link-45deg"></i> Copiar</button>
+        </div>
+    </div>
+
+    <!-- GRID: CONTEÚDO + SIDEBAR -->
+    <div class="content-grid">
+
+        <!-- CONTEÚDO DO ARTIGO -->
+        <article class="post-content">
+            <img class="post-image" src="https://placehold.co/1200x700" alt="Imagem da matéria">
+
+            <p>
+                A indústria de tecnologia está passando por uma transformação sem precedentes...
+            </p>
+
+            <p>
+                Segundo especialistas do setor, estamos apenas no início de uma era de inovação...
+            </p>
+
+            <!-- BOTÃO LEIA MAIS -->
+            <div class="load-more-wrapper">
+                <button id="loadMoreBtn" class="load-more-btn">Leia Mais</button>
+            </div>
+
+            <!-- TAGS RELACIONADAS -->
+            <div class="related-tags">
+                <h3>Tags relacionadas:</h3>
+                <div class="tag-list">
+                    <span class="tag" data-tag="ia">IA</span>
+                    <span class="tag" data-tag="tecnologia">Tecnologia</span>
+                    <span class="tag" data-tag="startups">Startups</span>
+                    <span class="tag" data-tag="inovacao">Inovação</span>
+                </div>
+            </div>
+
+            <!-- VERIFIQUE ESTA NOTÍCIA -->
+            <div class="verify-sources">
+                <h3>Verifique esta notícia em outras fontes</h3>
+                <p class="verify-description">Confira cobertura completa e vídeos sobre este tema nas principais plataformas:</p>
+
+                <div class="sources-grid">
+
+                    <!-- YouTube -->
+                    <a href="https://www.youtube.com" target="_blank" rel="noopener noreferrer"
+                       class="source-card" 
+                       data-fonte="youtube"
+                       aria-label="YouTube - vídeos e reportagens">
+                        <div class="source-icon"><i class="bi bi-youtube"></i></div>
+                        <div class="source-info">
+                            <h4>YouTube</h4>
+                            <p>Vídeos e reportagens</p>
+                        </div>
+                    </a>
+
+                    <!-- Google News -->
+                    <a href="https://news.google.com" target="_blank" rel="noopener noreferrer"
+                       class="source-card" 
+                       data-fonte="google-news"
+                       aria-label="Google News - cobertura mundial">
+                        <div class="source-icon"><i class="bi bi-newspaper"></i></div>
+                        <div class="source-info">
+                            <h4>Google News</h4>
+                            <p>Cobertura mundial</p>
+                        </div>
+                    </a>
+
+                    <!-- Twitter/X -->
+                    <a href="https://x.com" target="_blank" rel="noopener noreferrer"
+                       class="source-card" 
+                       data-fonte="twitter"
+                       aria-label="X - discussões em tempo real">
+                        <div class="source-icon"><i class="bi bi-twitter-x"></i></div>
+                        <div class="source-info">
+                            <h4>X (Twitter)</h4>
+                            <p>Discussões em tempo real</p>
+                        </div>
+                    </a>
+
+                    <!-- Reddit -->
+                    <a href="https://www.reddit.com" target="_blank" rel="noopener noreferrer"
+                       class="source-card" 
+                       data-fonte="reddit"
+                       aria-label="Reddit - análises da comunidade">
+                        <div class="source-icon"><i class="bi bi-reddit"></i></div>
+                        <div class="source-info">
+                            <h4>Reddit</h4>
+                            <p>Análises da comunidade</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+        </article>
+
+        <!-- SIDEBAR ESPECIALISTA -->
+        <aside class="expert-card">
+
+            <h4 class="expert-title">Especialista</h4>
+
+            <div class="expert-header">
+                <img src="https://placehold.co/100x100" class="expert-img" alt="Ricardo Santos">
+                <div>
+                    <h3 class="expert-name">Ricardo Santos</h3>
+                    <span class="expert-role">Editor de Tecnologia</span>
+                </div>
+            </div>
+
+            <p class="expert-description">
+                Jornalista especializado em tecnologia com mais de 10 anos de experiência.
+            </p>
+
+            <p class="expert-subtitle">Especialidades:</p>
+
+            <div class="expert-specialties">
+                <span class="tag" data-tag="ia">IA</span>
+                <span class="tag" data-tag="startups">Startups</span>
+                <span class="tag" data-tag="inovacao">Inovação</span>
+            </div>
+
+            <hr class="expert-divider">
+
+            <div class="expert-social">
+                <a href="https://x.com/?lang=pt" target="_blank" rel="noopener noreferrer" aria-label="X do especialista"><i class="bi bi-twitter"></i></a>
+                <a href="https://br.linkedin.com/?mcid=6821526239111716925&src=go-pa" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn do especialista"><i class="bi bi-linkedin"></i></a>
+                <a href="mailto:gmail.com" target="_blank" rel="noopener noreferrer" aria-label="Email do especialista"><i class="bi bi-envelope"></i></a>
+            </div>
+
+        </aside>
+
+    </div> 
+
+
+<div id="comments-section">
+
+    <h3 class="comments-title">Comentários (3)</h3>
+
+    <div class="comments-list">
+
+        <div class="comment-item">
+            <img src="https://i.pravatar.cc/48?img=12" class="comment-avatar" alt="Mariana Costa">
+            <div class="comment-body">
+                <div class="comment-header">
+                    <span class="comment-name">Mariana Costa</span>
+                    <span class="comment-time">• há 2 horas</span>
+                </div>
+                <p class="comment-text">Matéria excelente!</p>
+                <div class="comment-actions">
+                    <button>Responder</button>
+                    <button>Curtir</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="comment-item">
+            <img src="https://i.pravatar.cc/48?img=8" class="comment-avatar" alt="Lucas Andrade">
+            <div class="comment-body">
+                <div class="comment-header">
+                    <span class="comment-name">Lucas Andrade</span>
+                    <span class="comment-time">• há 5 horas</span>
+                </div>
+                <p class="comment-text">Muito bem explicado!</p>
+                <div class="comment-actions">
+                    <button>Responder</button>
+                    <button>Curtir</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="comment-item">
+            <img src="https://i.pravatar.cc/48?img=31" class="comment-avatar" alt="João Vieira">
+            <div class="comment-body">
+                <div class="comment-header">
+                    <span class="comment-name">João Vieira</span>
+                    <span class="comment-time">• há 1 dia</span>
+                </div>
+                <p class="comment-text">Informação muito útil.</p>
+                <div class="comment-actions">
+                    <button>Responder</button>
+                    <button>Curtir</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <button id="load-more-comments" class="load-more-btn">
+        Carregar mais comentários
+    </button>
+
+    <div id="login-warning" class="hidden" style="padding:16px; background:#e2e0e1; border-radius:8px; margin-top:20px;">
+        <strong>Você precisa fazer login para comentar.</strong><br>
+        <button id="login-warning-btn" style="margin-top:10px; padding:6px 12px; background:#b1b1b1; color:#fff; border:none; border-radius:6px;">
+            Fazer login
+        </button>
+    </div>
+    
+
+    <div class="comments-wrapper">
+
+        <h3 class="comments-title">Deixe seu comentário</h3>
+
+        <!-- CONTROLES DE LOGIN / NOME -->
+
+        <form class="comment-form">
+            <textarea id="commentBox" class="comment-box" placeholder="Compartilhe sua opinião..." disabled></textarea>
+
+            <button type="submit" class="comment-submit">
+                Publicar comentário
+            </button>
+        </form>
+
+    </div>
+
+</div>
+
+<!-- Modal de Login Mocada -->
+<div id="loginModal" class="login-modal" aria-hidden="true" role="dialog" aria-labelledby="loginModalTitle">
+    <div class="login-modal-content" role="document">
+      <span id="closeLoginModal" class="close-login" aria-label="Fechar">&times;</span>
+      <h3 id="loginModalTitle">Entrar para comentar</h3>
+  
+      <label for="loginEmail">E-mail:</label>
+      <input type="email" id="loginEmail" placeholder="seuemail@exemplo.com" />
+
+      <button id="loginConfirm" type="button">Entrar</button>
+    </div>
+</div>
+
+<!-- JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="../assets/js/paginadenoticia.js"></script>
+</body>
 </html>
+
+
+
