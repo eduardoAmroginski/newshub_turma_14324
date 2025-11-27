@@ -31,14 +31,20 @@ class HeaderCustom extends HTMLElement {
             </div>
         </header>
         
-        <!-- Menu mobile -->
         <div class="mobile-menu">
-            <div class="search-icon-mobile">
+            <div class="search-icon-mobile" id="search-btn-mobile"> 
                 <i class="fas fa-search"></i>
             </div>
             <div class="hamburger" id="hamburger-btn">
                 <i class="fas fa-bars"></i>
             </div>
+            <div class="search-mobile-container" id="search-mobile-container" style="display:none; padding: 10px; background-color: #fff; border-radius: 8px; box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); margin-bottom: 10px; width: 100%;">
+                <div class="search-box">
+                    <i class="fas fa-search"></i>
+                    <input type="text" placeholder="Buscar notícias...">
+                </div>
+            </div>
+
             <div class="mobile-nav" id="mobile-nav">
                 <a href="#Home"><i class="fas fa-home"></i> Home</a>
                 <a href="#"><i class="fas fa-th-large"></i> Categorias</a>

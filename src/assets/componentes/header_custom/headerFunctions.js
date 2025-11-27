@@ -24,15 +24,43 @@ export const applyHeaderEvents = () => {
     // Menu hamburguer mobile
     const hamburgerBtn = document.getElementById('hamburger-btn');
     const mobileNav = document.getElementById('mobile-nav');
+    const searchBtnMobile = document.getElementById('search-btn-mobile'); // Novo
+    const searchMobileContainer = document.getElementById('search-mobile-container'); // Novo
 
     hamburgerBtn.addEventListener('click', function () {
         mobileNav.classList.toggle('active');
+        // Ao abrir o menu, se a pesquisa estiver aberta, feche
+        if (searchMobileContainer && searchMobileContainer.style.display !== 'none') {
+            searchMobileContainer.style.display = 'none';
+        }
     });
+
+    // NOVO: Evento para o botão de pesquisa mobile
+    if (searchBtnMobile) {
+        searchBtnMobile.addEventListener('click', function () {
+            if (searchMobileContainer) {
+                // Alterna a exibição da barra de pesquisa (se display for 'none', vira 'block')
+                searchMobileContainer.style.display = searchMobileContainer.style.display === 'none' ? 'block' : 'none';
+                
+                // Feche o menu de navegação mobile se a pesquisa for aberta
+                if (searchMobileContainer.style.display === 'block') {
+                    mobileNav.classList.remove('active');
+                }
+            }
+        });
+    }
 
     // Fechar menu ao clicar fora
     document.addEventListener('click', function (event) {
-        if (!event.target.closest('.mobile-menu')) {
+        // Obtenha o elemento mais próximo que seja 'mobile-menu'
+        const isClickInsideMobileMenu = event.target.closest('.mobile-menu');
+
+        if (!isClickInsideMobileMenu) {
             mobileNav.classList.remove('active');
+            // NOVO: Esconde a barra de pesquisa mobile também
+            if (searchMobileContainer) {
+                searchMobileContainer.style.display = 'none';
+            }
         }
     });
 
