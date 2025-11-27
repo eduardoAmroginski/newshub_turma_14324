@@ -109,8 +109,8 @@ display: none;
 
 /* Card individual */
 .news-card {
-flex: 0 0 calc(33.333% - 1rem);
-min-width: calc(33.333% - 1rem);
+  flex: 0 0 24%;
+  min-width: 24%;
 background: #fff;
 border-radius: 10px;
 overflow: hidden;
