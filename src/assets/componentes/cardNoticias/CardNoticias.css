@@ -52,3 +52,9 @@ margin-top: 10px;
 .text-bg-custom{
     background-color: rgb(167, 165, 165);
 }
+
+.data {
+    font-family: "Inter";
+    color: rgb(173, 165, 165);
+    font-size: 12px;
+}
