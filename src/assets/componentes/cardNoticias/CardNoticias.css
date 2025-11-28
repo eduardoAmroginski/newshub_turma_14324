@@ -1,0 +1,60 @@
+.card-noticias {
+background: white;
+width: 200px;
+text-align: center;
+}
+
+.title-noticia {
+    font-family: "Inter";
+    color: black;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.text-noticia {
+    font-family: "Inter";
+    color: rgb(173, 165, 165);
+    font-size: 12px;
+}
+
+.cardquadrado {
+    display: flex;
+    flex-direction: column;
+    
+   
+}
+
+.card-corpo {
+background: #fff;
+text-align:left;
+margin-top: 10px;
+}
+
+.tamanhocard{
+    width: 28rem;     
+    overflow: hidden;
+    border: none;
+}
+
+.tamanhocard:hover img{
+    transform: scale(1.5);
+}
+
+.tamanhocard img{
+    transition: transform 1s ease-in-out;
+}
+
+    .container-imagem {
+        overflow: hidden; 
+        transition: transform 0.3s ease-in-out;
+    }
+
+.text-bg-custom{
+    background-color: rgb(167, 165, 165);
+}
+
+.data {
+    font-family: "Inter";
+    color: rgb(173, 165, 165);
+    font-size: 12px;
+}
