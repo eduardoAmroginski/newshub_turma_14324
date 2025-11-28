@@ -1,18 +1,399 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>NewsHub</title>
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" />
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css" />
-        <link rel="stylesheet" href="/src/assets/css/styles.css" />
-    </head>
-    <body>
-        <h1>Index</h1>
-        <div id="container-noticias-alta"></div>
-        <div id="container-footer-custom"></div>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
-        <script type="module" src="./src/assets/js/script.js"></script>
-    </body>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NewsHub</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  
+  <!-- CSS personalizado -->
+  <link rel="stylesheet" href="./src/assets/css/styles.css" />
+  <link rel="stylesheet" href="./src/assets/css/home.css" />
+</head>
+
+
+<body>
+
+  <!-- LOADER -->
+  <div id="loader">
+    <div class="loader-content">
+      <img src="src/assets/img/nh-logo.png" alt="Logo" class="loader-logo" />
+      <div class="spinner"></div>
+    </div>
+  </div>
+  
+  <!-- HEADER  -->
+  <header></header>
+
+  <main>
+
+    <!-- Notícias Principais - Mundial -->
+    <section id="noticias-principais" class="container my-4">
+
+      <h4>Notícias Principais - Mundial</h4>
+    
+      <div id="carouselNoticias" class="carousel slide" data-bs-ride="carousel">
+    
+        <div class="carousel-inner" id="carousel-principal-inner">
+          <!-- Itens serão carregados pelo JS -->
+        </div>
+    
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselNoticias" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </button>
+    
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselNoticias" data-bs-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </button>
+    
+      </div>
+    
+    </section>
+    
+    <!-- Notícias Nacionais -->
+    <section id="noticias-nacionais" class="container my-5">
+
+      <h4 class="mb-4">Notícias Nacionais</h4>
+
+      <!-- Carrossel horizontal personalizado -->
+      <div class="news-carousel position-relative">
+
+        <!-- Botão anterior -->
+        <button class="carousel-btn left" id="prevBtn">&#10094;</button>
+
+        <!-- Container deslizante -->
+        <div class="carousel-inner-custom" id="carouselNacional">
+
+          <!-- CARD 1 -->
+          <a href="./src/pages/noticia.html?id=nacional1" class="news-card text-decoration-none text-dark">
+            <img src="./src/assets/img/Nacional1.jpg" alt="Imagem Blockchain">
+            <div class="card-body">
+              <span class="badge bg-dark me-1">Tecnologia</span>
+              <h5 class="mt-2">Startup brasileira desenvolve solução inovadora em blockchain</h5>
+              <p>Empresa nacional recebe investimento milionário para expandir plataforma de segurança digital.</p>
+              <span class="me-2">9 Out 2025</span>
+              <i data-lucide="clock" class="text-dark"></i>
+              <span>5 min</span>
+            </div>
+          </a>
+
+          <!-- CARD 2 -->
+          <a href="./src/pages/noticia.html?id=nacional2" class="news-card text-decoration-none text-dark">
+            <img src="./src/assets/img/Nacional2.jpg" alt="Imagem E-commerce">
+            <div class="card-body">
+              <span class="badge bg-dark me-1">Negócios</span>
+              <h5 class="mt-2">Mercado brasileiro de e-commerce cresce 25% no último trimestre</h5>
+              <p>Setor impulsionado por novos hábitos de consumo e investimentos em logística.</p>
+              <span class="me-2">9 Out 2025</span>
+              <i data-lucide="clock" class="text-dark"></i>
+              <span>5 min</span>
+            </div>
+          </a>
+
+          <!-- CARD 3 -->
+          <a href="./src/pages/noticia.html?id=nacional3" class="news-card text-decoration-none text-dark">
+            <img src="./src/assets/img/Nacional3.jpg" alt="Imagem Jogos">
+            <div class="card-body">
+              <span class="badge bg-dark me-1">Jogos</span>
+              <h5 class="mt-2">Desenvolvedores brasileiros lançam jogo indie premiado internacionalmente</h5>
+              <p>Título nacional conquista prêmios em festivais de games ao redor do mundo.</p>
+              <span class="me-2">9 Out 2025</span>
+              <i data-lucide="clock" class="text-dark"></i>
+              <span>4 min</span>
+            </div>
+          </a>
+
+          <!-- CARD 4 -->
+          <a href="./src/pages/noticia.html?id=nacional4" class="news-card text-decoration-none text-dark">
+            <img src="./src/assets/img/Nacional4.jpg" alt="Imagem Amazonia">
+            <div class="card-body">
+              <span class="badge bg-dark me-1">Ciência</span>
+              <h5 class="mt-2">Cientistas brasileiros fazem descoberta importante sobre Amazônia</h5>
+              <p>Pesquisa revela novos dados sobre biodiversidade e preservação da floresta.</p>
+              <span class="me-2">8 Out 2025</span>
+              <i data-lucide="clock" class="text-dark"></i>
+              <span>6 min</span>
+            </div>
+          </a>
+
+          <!-- CARD 5 -->
+          <a href="./src/pages/noticia.html?id=nacional5" class="news-card text-decoration-none text-dark">
+            <img src="./src/assets/img/Nacional5.jpg" alt="Imagem Saúde">
+            <div class="card-body">
+              <span class="badge bg-dark me-1">Entretenimento</span>
+              <h5 class="mt-2">Cinema nacional bate recordes de bilheteria neste ano</h5>
+              <p>Produções brasileiras conquistam público e crítica com histórias autênticas.</p>
+              <span class="me-2">8 Out 2025</span>
+              <i data-lucide="clock" class="text-dark"></i>
+              <span>5 min</span>
+            </div>
+          </a>
+          
+        <!-- Adicione quantos cards quiser -->
+        </div>
+
+        <!-- Botão próximo -->
+        <button class="carousel-btn right" id="nextBtn">&#10095;</button>
+
+      </div>
+
+    </section>
+
+    <!-- Noticias Regionais  -->
+    <section id="noticias-regionais" class="noticias-regionais container my-5">
+
+      <div class="row">
+
+        <!-- Coluna esquerda: Cards -->
+        <div class="col-lg-8">
+
+          <h4 class="mb-4">Notícias Regionais</h4>
+
+          <div class="row g-4">
+
+            <!-- CARD 1 -->
+            <div class="col-md-6">
+              <a href="./src/pages/noticia.html?id=regional1" class="text-decoration-none text-dark">
+                <div class="card border-0 shadow-sm h-100">
+                  <img src="./src/assets/img/Regional1.jpg" class="card-img-top" alt="Imagem Gub de Inovação">
+                  <div class="card-body">
+                    <span class="badge bg-dark mb-2">Tecnologia</span>
+                    <h6 class="fw-bold">Hub de inovação em São Paulo atrai empresas de tecnologia</h6>
+                    <p class="small text-muted">Novo polo tecnológico promete gerar milhares de empregos na capital paulista.</p>
+                    <div class="text-muted small">
+                      <span class="me-2">10 Out 2025</span>
+                      <i data-lucide="clock"></i>
+                      <span>4 min</span>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+            <!-- CARD 2 -->
+            <div class="col-md-6">
+              <a href="./src/pages/noticia.html?id=regional2" class="text-decoration-none text-dark">
+                <div class="card border-0 shadow-sm h-100">
+                  <img src="./src/assets/img/Regional2.jpg" class="card-img-top" alt="Imagem Exportações América Latina">
+                  <div class="card-body">
+                    <span class="badge bg-dark mb-2">Negócios</span>
+                    <h6 class="fw-bold">Empresas do Sul do Brasil expandem exportações para América Latina</h6>
+                    <p class="small text-muted">Região Sul consolida posição como porta de entrada para mercados vizinhos.</p>
+                    <div class="text-muted small">
+                      <span class="me-2">9 Out 2025</span>
+                      <i data-lucide="clock"></i>
+                      <span>5 min</span>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+            <!-- CARD 3 -->
+            <div class="col-md-6">
+              <a href="./src/pages/noticia.html?id=regional3" class="text-decoration-none text-dark">
+                <div class="card border-0 shadow-sm h-100">
+                  <img src="./src/assets/img/Regional3.jpg" class="card-img-top" alt="Imagem Vacina Experimental">
+                  <div class="card-body">
+                    <span class="badge bg-dark mb-2">Ciência</span>
+                    <h6 class="fw-bold">Universidade do Rio desenvolve vacina experimental promissora</h6>
+                    <p class="small text-muted">Pesquisadores cariocas avançam em estudos para combate a doenças tropicais.</p>
+                    <div class="text-muted small">
+                      <span class="me-2">9 Out 2025</span>
+                      <i data-lucide="clock"></i>
+                      <span>6 min</span>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+            <!-- CARD 4 -->
+            <div class="col-md-6">
+              <a href="./src/pages/noticia.html?id=regional4" class="text-decoration-none text-dark">
+                <div class="card border-0 shadow-sm h-100">
+                  <img src="./src/assets/img/Regional4.jpg" class="card-img-top" alt="Imagem Festival de Música">
+                  <div class="card-body">
+                    <span class="badge bg-dark mb-2">Entretenimento</span>
+                    <h6 class="fw-bold">Festival de música reúne milhares em Minas Gerais</h6>
+                    <p class="small text-muted">Evento cultural destaca talento regional e atrai turistas de todo o país.</p>
+                    <div class="text-muted small">
+                      <span class="me-2">8 Out 2025</span>
+                      <i data-lucide="clock"></i>
+                      <span>4 min</span>
+                    </div>
+                  </div>
+                </div>
+                </a>
+              </div>
+
+              <div class="col-md-6">
+                <a href="./src/pages/noticia.html?id=regional4" class="text-decoration-none text-dark">
+                  <div class="card border-0 shadow-sm h-100">
+                    <img src="./src/assets/img/Regional4.jpg" class="card-img-top" alt="Imagem Festival de Música">
+                    <div class="card-body">
+                      <span class="badge bg-dark mb-2">Entretenimento</span>
+                      <h6 class="fw-bold">Festival de música reúne milhares em Minas Gerais</h6>
+                      <p class="small text-muted">Evento cultural destaca talento regional e atrai turistas de todo o país.</p>
+                      <div class="text-muted small">
+                        <span class="me-2">8 Out 2025</span>
+                        <i data-lucide="clock"></i>
+                        <span>4 min</span>
+                      </div>
+                    </div>
+                  </div>
+                  </a>
+                </div>
+
+                <div class="col-md-6">
+                  <a href="./src/pages/noticia.html?id=regional4" class="text-decoration-none text-dark">
+                    <div class="card border-0 shadow-sm h-100">
+                      <img src="./src/assets/img/Regional4.jpg" class="card-img-top" alt="Imagem Festival de Música">
+                      <div class="card-body">
+                        <span class="badge bg-dark mb-2">Entretenimento</span>
+                        <h6 class="fw-bold">Festival de música reúne milhares em Minas Gerais</h6>
+                        <p class="small text-muted">Evento cultural destaca talento regional e atrai turistas de todo o país.</p>
+                        <div class="text-muted small">
+                          <span class="me-2">8 Out 2025</span>
+                          <i data-lucide="clock"></i>
+                          <span>4 min</span>
+                        </div>
+                      </div>
+                    </div>
+                    </a>
+                  </div>
+
+                  <div class="col-md-6">
+                    <a href="./src/pages/noticia.html?id=regional4" class="text-decoration-none text-dark">
+                      <div class="card border-0 shadow-sm h-100">
+                        <img src="./src/assets/img/Regional4.jpg" class="card-img-top" alt="Imagem Festival de Música">
+                        <div class="card-body">
+                          <span class="badge bg-dark mb-2">Entretenimento</span>
+                          <h6 class="fw-bold">Festival de música reúne milhares em Minas Gerais</h6>
+                          <p class="small text-muted">Evento cultural destaca talento regional e atrai turistas de todo o país.</p>
+                          <div class="text-muted small">
+                            <span class="me-2">8 Out 2025</span>
+                            <i data-lucide="clock"></i>
+                            <span>4 min</span>
+                          </div>
+                        </div>
+                      </div>
+                      </a>
+                    </div>
+
+                    <div class="col-md-6">
+                      <a href="./src/pages/noticia.html?id=regional4" class="text-decoration-none text-dark">
+                        <div class="card border-0 shadow-sm h-100">
+                          <img src="./src/assets/img/Regional4.jpg" class="card-img-top" alt="Imagem Festival de Música">
+                          <div class="card-body">
+                            <span class="badge bg-dark mb-2">Entretenimento</span>
+                            <h6 class="fw-bold">Festival de música reúne milhares em Minas Gerais</h6>
+                            <p class="small text-muted">Evento cultural destaca talento regional e atrai turistas de todo o país.</p>
+                            <div class="text-muted small">
+                              <span class="me-2">8 Out 2025</span>
+                              <i data-lucide="clock"></i>
+                              <span>4 min</span>
+                            </div>
+                          </div>
+                        </div>
+                        </a>
+                      </div>
+
+                      <div class="col-md-6">
+                        <a href="./src/pages/noticia.html?id=regional4" class="text-decoration-none text-dark">
+                          <div class="card border-0 shadow-sm h-100">
+                            <img src="./src/assets/img/Regional4.jpg" class="card-img-top" alt="Imagem Festival de Música">
+                            <div class="card-body">
+                              <span class="badge bg-dark mb-2">Entretenimento</span>
+                              <h6 class="fw-bold">Festival de música reúne milhares em Minas Gerais</h6>
+                              <p class="small text-muted">Evento cultural destaca talento regional e atrai turistas de todo o país.</p>
+                              <div class="text-muted small">
+                                <span class="me-2">8 Out 2025</span>
+                                <i data-lucide="clock"></i>
+                                <span>4 min</span>
+                              </div>
+                            </div>
+                          </div>
+                          </a>
+                        </div>
+
+                        <div class="col-md-6">
+                          <a href="./src/pages/noticia.html?id=regional4" class="text-decoration-none text-dark">
+                            <div class="card border-0 shadow-sm h-100">
+                              <img src="./src/assets/img/Regional4.jpg" class="card-img-top" alt="Imagem Festival de Música">
+                              <div class="card-body">
+                                <span class="badge bg-dark mb-2">Entretenimento</span>
+                                <h6 class="fw-bold">Festival de música reúne milhares em Minas Gerais</h6>
+                                <p class="small text-muted">Evento cultural destaca talento regional e atrai turistas de todo o país.</p>
+                                <div class="text-muted small">
+                                  <span class="me-2">8 Out 2025</span>
+                                  <i data-lucide="clock"></i>
+                                  <span>4 min</span>
+                                </div>
+                              </div>
+                            </div>
+                            </a>
+                          </div>
+
+          </div>
+        </div>
+        
+        <!-- Em alta -->
+        <div class="col-lg-4">
+          <div id="container-noticias-alta"></div>        
+
+        </div>
+      </div>
+
+    </section>        
+
+    <!-- Publicidade  -->
+    <section class="container my-4">
+
+      <div class="publicidade text-center">
+
+        <small class="text-muted text-uppercase">Publicidade</small>
+
+        <div class="publicidade-box mt-2 p-4 text-white rounded-3 shadow">
+          <h6 class="mb-1">Espaço Publicitário Disponível</h6>
+          <p class="small mb-0">Anuncie aqui e alcance milhares de leitores interessados em tecnologia e inovação.</p>
+        </div>
+
+      </div>
+
+    </section>
+
+  </main>
+
+  <!-- Footer  -->
+      <div id="container-footer-custom"></div>
+  
+
+  <!-- Ícones Lucide -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <script>
+    lucide.createIcons();
+  </script>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script type="module" src="./src/assets/js/script.js"></script>  
+  <script type="module" src="./src/assets/js/home.js"></script>  
+  <script type="module" src="./src/assets/js/home-carrossel.js"></script>  
+
+  <script>
+    window.addEventListener("load", function () {
+      setTimeout(() => {
+        document.getElementById("loader").style.opacity = "0";
+        setTimeout(() => {
+          document.getElementById("loader").style.display = "none";
+        }, 500);
+      }, 600); //tempo na tela
+    });
+  </script>
+
+</body>
 </html>
+
