@@ -13,6 +13,9 @@ class CardNoticias extends HTMLElement {
                     <p class="text-noticia">This is a longer card with supporting text below as a natural lead-in to
                         additional
                         content. This content is a little bit longer.</p>
+                        <h6 class="data"><i class="bi bi-calendar-check"></i> 27/11/2025 <i class="bi bi-clock"></i> 10h:30min </h6>
+                         
+                        
                 </div>
             </a>
         </div>`;
