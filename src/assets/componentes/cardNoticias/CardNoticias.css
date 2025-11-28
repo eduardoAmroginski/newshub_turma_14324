@@ -37,11 +37,11 @@ margin-top: 10px;
 }
 
 .tamanhocard:hover img{
-    transform: scale(2);
+    transform: scale(1.5);
 }
 
 .tamanhocard img{
-    transition: transform 0.2s ease-in-out;
+    transition: transform 1s ease-in-out;
 }
 
     .container-imagem {
