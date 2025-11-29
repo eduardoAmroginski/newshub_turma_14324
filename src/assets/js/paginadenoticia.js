@@ -1,3 +1,6 @@
+import { fetchEverything } from "./service/api.js";
+import Utils from "./utils/utils.js";
+
 /* paginadenoticia.js
    Versão integrada: tags → categorias, fontes externas, social expert links, login mocado.
 */
@@ -364,3 +367,38 @@
   
   })();
   
+
+const inserirDetalhesNoticia = (article) => {
+
+  const noticiaImagem = document.getElementById("post-image")
+  noticiaImagem.src = article.urlToImage
+
+  const noticiaTitulo = document.getElementById("post-title")
+  noticiaTitulo.textContent = article.title
+
+  const noticiaBreadcrumb = document.getElementById("news-title-breadcrumb")
+  noticiaBreadcrumb.textContent = article.title
+
+  const noticiaConteudo = document.getElementById("news-content")
+  noticiaConteudo.innerHTML = article.content
+
+}
+
+
+  const carregarDetalhesNoticia =  async() => {
+
+    const newsTitle = Utils.getParamFromURL("news-title");
+
+    console.log("newsTitle ==> ", newsTitle);
+
+    const listArticles = await fetchEverything(newsTitle);
+
+    console.log("listArticles ==> ", listArticles)
+
+    const article = Utils.filterByTitle(newsTitle, listArticles);
+
+    inserirDetalhesNoticia(article)
+
+  }
+  carregarDetalhesNoticia()
+
