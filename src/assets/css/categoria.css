@@ -1,3 +1,5 @@
+@import "../componentes/carrossel-categoria/carrosselcat.style.css";
+
 .page-category{
     margin: 0 10%;
     border-color: orange; 
@@ -47,25 +49,25 @@
 /*Container do carrossel*/
 .content__carousel{
     /*Container principal do carrossel*/
+    contain: content;
     width: 100%;
-    height: 30rem;
     border-color: blue;
     border-style: double;
     background-color: aquamarine;
 }
 
-.content__carousel__header{
+/*.content__carousel__header{
     padding: 0.25rem 0.5rem 0.5rem;
 }
 
 .content__carousel__carousel{
-    /*Área do Carrossel*/
+    /*Área do Carrossel
     width: 100%;
     height: 30rem;
     border-color: red;
     border-style: double;
     background-color: lightcoral;
-}
+}*/
 
 /*Container dos cards*/
 .content__cards{
